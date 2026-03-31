@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 import { reorderPartners } from "@/lib/partners";
 import { verifyAuth } from "@/lib/auth";
 
+export const dynamic = "force-dynamic";
+
 export async function POST(request: NextRequest) {
   if (!(await verifyAuth())) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });

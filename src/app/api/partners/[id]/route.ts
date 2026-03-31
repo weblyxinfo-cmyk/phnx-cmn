@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 import { updatePartner, deletePartner } from "@/lib/partners";
 import { verifyAuth } from "@/lib/auth";
 
+export const dynamic = "force-dynamic";
+
 export async function PUT(
   request: NextRequest,
   { params }: { params: Promise<{ id: string }> }

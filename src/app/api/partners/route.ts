@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 import { getActivePartners, createPartner } from "@/lib/partners";
 import { verifyAuth } from "@/lib/auth";
 
+export const dynamic = "force-dynamic";
+
 export async function GET() {
   try {
     const data = await getActivePartners();
