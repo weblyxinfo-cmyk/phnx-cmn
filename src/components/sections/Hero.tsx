@@ -9,10 +9,10 @@ export default function Hero() {
 
   return (
     <section id="hero" className="grid grid-cols-1 md:grid-cols-2 min-h-[100svh] pt-14 md:pt-20">
-      {/* Right - dark panel (order-first on mobile, compact strip) */}
-      <div className="order-first md:order-last bg-hero-dark relative flex items-center justify-center gap-4 py-8 md:py-0 md:flex-col md:min-h-[600px] overflow-hidden">
-        {/* Stripes - desktop only */}
-        <div className="absolute inset-0 hidden md:flex flex-col">
+      {/* Dark panel — HIDDEN on mobile, only visible on md+ */}
+      <div className="hidden md:flex order-last bg-hero-dark relative flex-col items-center justify-center min-h-[600px] overflow-hidden">
+        {/* Stripes */}
+        <div className="absolute inset-0 flex flex-col">
           {Array.from({ length: 8 }).map((_, i) => (
             <div key={i} className="flex-1 border-b border-white/[0.04]" />
           ))}
@@ -24,19 +24,24 @@ export default function Hero() {
           alt="Phoenix"
           width={200}
           height={200}
-          className="w-[44px] md:w-[200px] animate-float-bird drop-shadow-[0_0_40px_rgba(200,37,30,0.3)] mix-blend-screen relative z-10"
+          className="w-[200px] animate-float-bird drop-shadow-[0_0_40px_rgba(200,37,30,0.3)] mix-blend-screen relative z-10"
         />
 
         {/* Label */}
-        <p className="font-syne text-[10px] md:text-[11px] font-semibold tracking-[0.15em] md:tracking-[0.2em] uppercase text-white/40 md:mt-6 relative z-10">
+        <p className="font-syne text-[11px] font-semibold tracking-[0.2em] uppercase text-white/35 mt-6 relative z-10">
           {t("kicker")}
         </p>
       </div>
 
-      {/* Left - white panel */}
-      <div className="bg-white flex flex-col justify-center px-5 py-8 md:px-[60px] md:py-[80px]">
+      {/* Content panel */}
+      <div className="bg-white flex flex-col justify-center px-5 py-10 md:px-[60px] md:py-[80px]">
+        {/* Kicker — visible on mobile as red subtitle */}
+        <p className="font-syne text-[10px] font-semibold tracking-[0.18em] uppercase text-red mb-5 md:hidden">
+          {t("kicker")}
+        </p>
+
         {/* Tags */}
-        <div className="flex flex-wrap gap-1.5 md:gap-2 mb-6 md:mb-8 animate-fade-in-up-1">
+        <div className="flex flex-wrap gap-1.5 md:gap-2 mb-5 md:mb-8 animate-fade-in-up-1">
           {tags.map((tag: string) => (
             <span
               key={tag}
@@ -48,7 +53,7 @@ export default function Hero() {
         </div>
 
         {/* Claim */}
-        <h1 className="font-syne text-[28px] sm:text-[34px] md:text-[clamp(36px,4.5vw,60px)] font-semibold leading-[1.08] mb-5 md:mb-7 animate-fade-in-up-2">
+        <h1 className="font-syne text-[32px] sm:text-[36px] md:text-[clamp(36px,4.5vw,60px)] font-semibold leading-[1.05] mb-5 md:mb-7 animate-fade-in-up-2">
           {t("claim1")}
           <br />
           {t("claim2")}
