@@ -13,7 +13,7 @@
   "hero": {
     "kicker": "PR & Media Relations · od roku 2009",
     "tags": [
-      "15+ let zkušeností",
+      "17+ let zkušeností",
       "Silné vztahy s médii",
       "Individuální přístup",
       "Mezinárodní přesah",
@@ -28,10 +28,22 @@
   },
   "stats": {
     "items": [
-      { "num": "15+", "label": "let na trhu" },
-      { "num": "2009", "label": "rok vzniku agentury" },
-      { "num": "CZ–SK", "label": "primární trh" },
-      { "num": "EU", "label": "mezinárodní projekty" }
+      {
+        "num": "17+",
+        "label": "let na trhu"
+      },
+      {
+        "num": "2009",
+        "label": "rok vzniku agentury"
+      },
+      {
+        "num": "CZ–SK",
+        "label": "primární trh"
+      },
+      {
+        "num": "EU",
+        "label": "mezinárodní projekty"
+      }
     ]
   },
   "about": {
@@ -66,7 +78,7 @@
       },
       {
         "name": "Influencer Marketing",
-        "desc": "Výběr vhodných osobností, smluvní vztahy a kontrola jejich plnění."
+        "desc": "Výběr vhodných osobností, smluvní zajištění a kontrola plnění závazků."
       },
       {
         "name": "Interní komunikace",
@@ -96,7 +108,7 @@
     "num": "04",
     "label": "Klienti",
     "title": "Spolupracujeme s českými\ni mezinárodními značkami.",
-    "desc": "Mezi našimi klienty jsou lídři trhu i inovativní start-upy. Některým jsme komunikaci vybudovali od prvního okamžiku, jiným pomáháme plnit dlouhodobě nastavené cíle.",
+    "desc": "Mezi našimi klienty jsou lídři trhu i inovativní startupy. Některým jsme komunikaci vybudovali od prvního okamžiku, jiným pomáháme plnit dlouhodobě nastavené cíle.",
     "refTitle": "Zajímají vás detaily, reference nebo názor našich klientů?",
     "refItems": [
       "Zpětná vazba klientů v souvisejícím oboru",
@@ -109,7 +121,7 @@
     "num": "05",
     "label": "Kontakt",
     "title": "Potřebujete\nnastavit\nkomunikaci?",
-    "desc": "Rádi zpracujeme návrh k vašemu zadání.",
+    "desc": "Rádi zpracujeme návrh na základě vašeho zadání.",
     "labels": {
       "company": "Společnost",
       "address": "Adresa",
@@ -136,6 +148,23 @@
     "send": "Odeslat →"
   },
   "footer": {
-    "copy": "© 2025 Phoenix Communication a.s. — IČO 28976126"
+    "copy": "© 2026 Phoenix Communication a.s. — IČO 28976126",
+    "tagline": "Komunikační agentura působící na česko-slovenském trhu od roku 2009.",
+    "navLabel": "Navigace",
+    "links": {
+      "about": "O agentuře",
+      "services": "Služby",
+      "expertise": "Expertíza",
+      "clients": "Klienti",
+      "contact": "Kontakt"
+    },
+    "contactLabel": "Kontakt",
+    "privacy": "Ochrana osobních údajů"
+  },
+  "cookies": {
+    "text": "Tento web používá cookies pro zajištění správného fungování a analýzu návštěvnosti. Používáním webu souhlasíte s jejich využitím.",
+    "more": "Více informací",
+    "accept": "Přijmout",
+    "decline": "Odmítnout"
   }
 }

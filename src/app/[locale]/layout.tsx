@@ -1,8 +1,9 @@
-import { NextIntlClientProvider, useMessages } from "next-intl";
+import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { Syne, Inter } from "next/font/google";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import CookieConsent from "@/components/ui/CookieConsent";
 
 const syne = Syne({
   subsets: ["latin", "latin-ext"],
@@ -63,6 +64,7 @@ export default async function LocaleLayout({
       <body className="font-inter antialiased">
         <NextIntlClientProvider messages={messages}>
           {children}
+          <CookieConsent />
         </NextIntlClientProvider>
       </body>
     </html>

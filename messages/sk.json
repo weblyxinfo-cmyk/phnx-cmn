@@ -28,10 +28,22 @@
   },
   "stats": {
     "items": [
-      { "num": "15+", "label": "rokov na trhu" },
-      { "num": "2009", "label": "rok vzniku agentúry" },
-      { "num": "CZ–SK", "label": "primárny trh" },
-      { "num": "EU", "label": "medzinárodné projekty" }
+      {
+        "num": "15+",
+        "label": "rokov na trhu"
+      },
+      {
+        "num": "2009",
+        "label": "rok vzniku agentúry"
+      },
+      {
+        "num": "CZ–SK",
+        "label": "primárny trh"
+      },
+      {
+        "num": "EU",
+        "label": "medzinárodné projekty"
+      }
     ]
   },
   "about": {
@@ -41,9 +53,9 @@
     "points": [
       "Sme komunikačná agentúra pôsobiaca na česko-slovenskom trhu od roku 2009.",
       "Pomáhame firmám komunikovať s médiami, verejnosťou i vlastnými ľuďmi. Strategicky, zrozumiteľne a s dôrazom na výsledok.",
-      "Prepájame analytické myslenie, kreativitu a skúsenosti — vlastné i expertízu stálych spolupracovníkov z najrôznejších odborov.",
-      "Intenzívne a dlhodobo budujeme vzťahy s novinármi naprieč odbormi.",
-      "Ku každému klientovi pristupujeme individuálne. Bez univerzálnych šablón.",
+      "Prepájame analytické myslenie, kreativitu a skúsenosti — vlastné aj expertízu stálych spolupracovníkov z rozmanitých oblastí.",
+      "Intenzívne a dlhodobo budujeme vzťahy s novinármi naprieč odvetviami.",
+      "Ku každému klientovi pristupujeme individuálne. Bez univerzálnych šablón a poučiek.",
       "Participujeme na medzinárodných projektoch v rámci Európy."
     ]
   },
@@ -54,7 +66,7 @@
     "items": [
       {
         "name": "Strategické PR",
-        "desc": "Komunikačná stratégia, kampane, reputačný manažment vrátane krízovej komunikácie."
+        "desc": "Komunikačné stratégie, kampane, reputačný manažment vrátane krízovej komunikácie."
       },
       {
         "name": "Media Relations",
@@ -82,7 +94,7 @@
     "num": "03",
     "label": "Expertíza",
     "title": "Sektory,\nv ktorých\nsa pohybujeme.",
-    "desc": "Skúsenosti máme naprieč rôznymi odvetviami — od energetiky cez technológie až po kultúru a šport.",
+    "desc": "Máme skúsenosti naprieč rôznymi odvetviami — od energetiky cez technológie až po kultúru a šport.",
     "items": [
       "Energetika & obnoviteľné zdroje",
       "Technológie & IT",
@@ -95,13 +107,13 @@
   "clients": {
     "num": "04",
     "label": "Klienti",
-    "title": "Spolupracujeme s českými\na medzinárodnými značkami.",
-    "desc": "Medzi našimi klientmi sú lídri trhu i inovatívne start-upy. Niektorým sme komunikáciu vybudovali od prvého momentu, iným pomáhame plniť dlhodobo nastavené ciele.",
-    "refTitle": "Zaujímajú vás detaily, referencie alebo názor našich klientov?",
+    "title": "Spolupracujeme s českými\ni medzinárodnými značkami.",
+    "desc": "Medzi našimi klientmi sú lídri trhu aj inovatívne start-upy. Niektorým sme komunikáciu vybudovali od úplného začiatku, ďalším pomáhame napĺňať dlhodobo nastavené ciele.",
+    "refTitle": "Zaujímajú vás detaily, referencie či názory našich klientov?",
     "refItems": [
-      "Spätná väzba klientov v súvisiacom odbore",
-      "Prípadová štúdia týkajúca sa služby, ktorá vás zaujíma",
-      "Konkrétne mediálne výstupy, články, videá alebo úspešne realizované akcie"
+      "Spätná väzba klientov v príbuznom odbore",
+      "Prípadová štúdia k službe, ktorá vás zaujíma",
+      "Konkrétne mediálne výstupy, články, videá či úspešne zrealizované akcie"
     ],
     "refCta": "Napíšte nám →"
   },
@@ -109,7 +121,7 @@
     "num": "05",
     "label": "Kontakt",
     "title": "Potrebujete\nnastaviť\nkomunikáciu?",
-    "desc": "Radi vypracujeme návrh k vášmu zadaniu.",
+    "desc": "Radi pripravíme návrh na mieru vášmu zadaniu.",
     "labels": {
       "company": "Spoločnosť",
       "address": "Adresa",
@@ -129,13 +141,30 @@
     "photoCaptionNote": "Budova ČTK · 110 00 Praha 1"
   },
   "feedback": {
-    "label": "Váš feedback k návrhu",
+    "label": "Vaša spätná väzba k návrhu",
     "name": "Vaše meno",
     "email": "E-mail (nepovinné)",
     "text": "Čo sa vám páči, čo by ste zmenili, čo chýba…",
     "send": "Odoslať →"
   },
   "footer": {
-    "copy": "© 2025 Phoenix Communication a.s. — IČO 28976126"
+    "copy": "© 2026 Phoenix Communication a.s. — IČO 28976126",
+    "tagline": "Komunikačná agentúra pôsobiaca na česko-slovenskom trhu od roku 2009.",
+    "navLabel": "Navigácia",
+    "links": {
+      "about": "O agentúre",
+      "services": "Služby",
+      "expertise": "Expertíza",
+      "clients": "Klienti",
+      "contact": "Kontakt"
+    },
+    "contactLabel": "Kontakt",
+    "privacy": "Ochrana osobných údajov"
+  },
+  "cookies": {
+    "text": "Tento web používa cookies na zabezpečenie správneho fungovania a analýzu návštevnosti. Používaním webu súhlasíte s ich využitím.",
+    "more": "Viac informácií",
+    "accept": "Prijať",
+    "decline": "Odmietnuť"
   }
 }

@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Phoenix Communication — PR Agency Prague",
-    "description": "A communications agency operating in the Czech and Slovak markets since 2009. Strategic PR, media relations, social media."
+    "description": "A communications agency active in the Czech-Slovak market since 2009. Strategic PR, media relations, social media management."
   },
   "nav": {
     "about": "About",
@@ -13,9 +13,9 @@
   "hero": {
     "kicker": "PR & Media Relations · since 2009",
     "tags": [
-      "15+ years of experience",
-      "Strong media relationships",
-      "Individual approach",
+      "17+ years of experience",
+      "Deep media relationships",
+      "Tailored approach",
       "International reach",
       "Results-driven"
     ],
@@ -23,93 +23,105 @@
     "claim2": "reputation",
     "claim3": "is no",
     "claim4": "accident.",
-    "desc": "A communications agency operating in the Czech and Slovak markets since 2009. We help companies communicate with media, the public and their own people.",
-    "cta": "Contact us"
+    "desc": "A communications agency active in the Czech-Slovak market since 2009. We help companies communicate with the media, the public, and their own people.",
+    "cta": "Get in touch"
   },
   "stats": {
     "items": [
-      { "num": "15+", "label": "years on the market" },
-      { "num": "2009", "label": "year the agency was founded" },
-      { "num": "CZ–SK", "label": "primary market" },
-      { "num": "EU", "label": "international projects" }
+      {
+        "num": "17+",
+        "label": "years on the market"
+      },
+      {
+        "num": "2009",
+        "label": "year founded"
+      },
+      {
+        "num": "CZ–SK",
+        "label": "primary market"
+      },
+      {
+        "num": "EU",
+        "label": "international reach"
+      }
     ]
   },
   "about": {
     "num": "01",
     "label": "About",
-    "headline": "Strategically.\nClearly.\nWith a focus on\nresults.",
+    "headline": "Strategic.\nClear.\nRelentlessly\nresults-focused.",
     "points": [
-      "We are a communications agency operating in the Czech and Slovak markets since 2009.",
-      "We help companies communicate with media, the public and their own people. Strategically, clearly and with a focus on results.",
-      "We combine analytical thinking, creativity and experience — our own and the expertise of long-term collaborators from a wide range of fields.",
-      "We intensively and consistently build relationships with journalists across industries.",
-      "We approach each client individually. No universal templates.",
-      "We participate in international projects across Europe."
+      "We are a communications agency active in the Czech and Slovak markets since 2009.",
+      "We help companies communicate with the media, the public, and their own people — strategically, clearly, and with a relentless focus on results.",
+      "We blend analytical rigour, creativity, and hands-on experience — our own and that of a trusted network of specialists across disciplines.",
+      "We invest deeply and consistently in journalist relationships across sectors.",
+      "Every client engagement is bespoke. No off-the-shelf playbooks.",
+      "We deliver international projects across Europe."
     ]
   },
   "services": {
     "num": "02",
     "label": "Services",
-    "title": "Our\nservices",
+    "title": "What\nwe do",
     "items": [
       {
         "name": "Strategic PR",
-        "desc": "Communication strategy, campaigns, reputation management including crisis communication."
+        "desc": "Communications strategy, integrated campaigns, and reputation management — including crisis response."
       },
       {
         "name": "Media Relations",
-        "desc": "Long-term media work, media coverage and executive media training."
+        "desc": "Sustained media engagement, earned coverage, and executive spokesperson training."
       },
       {
         "name": "Social Media",
-        "desc": "Content, profile management, campaigns and performance support."
+        "desc": "Content creation, channel management, paid campaigns, and performance marketing."
       },
       {
         "name": "Influencer Marketing",
-        "desc": "Selection of suitable personalities, contractual relationships and compliance monitoring."
+        "desc": "Talent identification, contract management, and deliverable oversight."
       },
       {
-        "name": "Internal Communication",
-        "desc": "Communication aimed at employees and business partners."
+        "name": "Internal Communications",
+        "desc": "Employee engagement and partner communications that align with your external narrative."
       },
       {
         "name": "Events & Projects",
-        "desc": "Meetings for media, influencers, partners and the general public."
+        "desc": "Press events, influencer activations, partner gatherings, and public-facing experiences."
       }
     ]
   },
   "expertise": {
     "num": "03",
     "label": "Expertise",
-    "title": "Sectors\nwe operate\nin.",
-    "desc": "We have experience across various industries — from energy through technology to culture and sport.",
+    "title": "Sectors\nwe know\ninside out.",
+    "desc": "Our track record spans diverse industries — from energy and technology to culture and sport.",
     "items": [
       "Energy & Renewables",
       "Technology & IT",
       "Consumer Electronics",
-      "Medicine & Healthcare",
-      "Cosmetics & Lifestyle",
+      "Medical & Healthcare",
+      "Beauty & Lifestyle",
       "Culture & Sport"
     ]
   },
   "clients": {
     "num": "04",
     "label": "Clients",
-    "title": "We work with Czech\nand international brands.",
-    "desc": "Our clients include market leaders and innovative start-ups. For some we built communications from day one, for others we help achieve long-term goals.",
-    "refTitle": "Interested in details, references or our clients' opinions?",
+    "title": "Trusted by Czech\nand international brands.",
+    "desc": "Our portfolio includes market leaders and fast-moving start-ups alike. For some we built communications from scratch; for others we drive long-term strategic goals.",
+    "refTitle": "Want references, case studies, or client testimonials?",
     "refItems": [
-      "Client feedback in a related industry",
-      "A case study related to the service you are interested in",
-      "Specific media coverage, articles, videos or successfully executed events"
+      "Client feedback from a relevant sector",
+      "A case study for the service you are interested in",
+      "Media placements, articles, videos, or successfully delivered events"
     ],
-    "refCta": "Write to us →"
+    "refCta": "Get in touch →"
   },
   "contact": {
     "num": "05",
     "label": "Contact",
-    "title": "Need to set up\nyour\ncommunications?",
-    "desc": "We'll be happy to prepare a proposal for your brief.",
+    "title": "Ready to\nelevate your\ncommunications?",
+    "desc": "We would be glad to put together a tailored proposal.",
     "labels": {
       "company": "Company",
       "address": "Address",
@@ -136,6 +148,23 @@
     "send": "Send →"
   },
   "footer": {
-    "copy": "© 2025 Phoenix Communication a.s. — Company ID 28976126"
+    "copy": "© 2026 Phoenix Communication a.s. — Company ID 28976126",
+    "tagline": "Communications agency operating in the Czech and Slovak markets since 2009.",
+    "navLabel": "Navigation",
+    "links": {
+      "about": "About",
+      "services": "Services",
+      "expertise": "Expertise",
+      "clients": "Clients",
+      "contact": "Contact"
+    },
+    "contactLabel": "Contact",
+    "privacy": "Privacy Policy"
+  },
+  "cookies": {
+    "text": "This website uses cookies to ensure proper functionality and analyse traffic. By using this site, you agree to their use.",
+    "more": "Learn more",
+    "accept": "Accept",
+    "decline": "Decline"
   }
 }
