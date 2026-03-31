@@ -1,0 +1,141 @@
+{
+  "metadata": {
+    "title": "Phoenix Communication — PR Agency Prague",
+    "description": "A communications agency operating in the Czech and Slovak markets since 2009. Strategic PR, media relations, social media."
+  },
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "expertise": "Expertise",
+    "clients": "Clients",
+    "contact": "Contact"
+  },
+  "hero": {
+    "kicker": "PR & Media Relations · since 2009",
+    "tags": [
+      "15+ years of experience",
+      "Strong media relationships",
+      "Individual approach",
+      "International reach",
+      "Results-driven"
+    ],
+    "claim1": "Good",
+    "claim2": "reputation",
+    "claim3": "is no",
+    "claim4": "accident.",
+    "desc": "A communications agency operating in the Czech and Slovak markets since 2009. We help companies communicate with media, the public and their own people.",
+    "cta": "Contact us"
+  },
+  "stats": {
+    "items": [
+      { "num": "15+", "label": "years on the market" },
+      { "num": "2009", "label": "year the agency was founded" },
+      { "num": "CZ–SK", "label": "primary market" },
+      { "num": "EU", "label": "international projects" }
+    ]
+  },
+  "about": {
+    "num": "01",
+    "label": "About",
+    "headline": "Strategically.\nClearly.\nWith a focus on\nresults.",
+    "points": [
+      "We are a communications agency operating in the Czech and Slovak markets since 2009.",
+      "We help companies communicate with media, the public and their own people. Strategically, clearly and with a focus on results.",
+      "We combine analytical thinking, creativity and experience — our own and the expertise of long-term collaborators from a wide range of fields.",
+      "We intensively and consistently build relationships with journalists across industries.",
+      "We approach each client individually. No universal templates.",
+      "We participate in international projects across Europe."
+    ]
+  },
+  "services": {
+    "num": "02",
+    "label": "Services",
+    "title": "Our\nservices",
+    "items": [
+      {
+        "name": "Strategic PR",
+        "desc": "Communication strategy, campaigns, reputation management including crisis communication."
+      },
+      {
+        "name": "Media Relations",
+        "desc": "Long-term media work, media coverage and executive media training."
+      },
+      {
+        "name": "Social Media",
+        "desc": "Content, profile management, campaigns and performance support."
+      },
+      {
+        "name": "Influencer Marketing",
+        "desc": "Selection of suitable personalities, contractual relationships and compliance monitoring."
+      },
+      {
+        "name": "Internal Communication",
+        "desc": "Communication aimed at employees and business partners."
+      },
+      {
+        "name": "Events & Projects",
+        "desc": "Meetings for media, influencers, partners and the general public."
+      }
+    ]
+  },
+  "expertise": {
+    "num": "03",
+    "label": "Expertise",
+    "title": "Sectors\nwe operate\nin.",
+    "desc": "We have experience across various industries — from energy through technology to culture and sport.",
+    "items": [
+      "Energy & Renewables",
+      "Technology & IT",
+      "Consumer Electronics",
+      "Medicine & Healthcare",
+      "Cosmetics & Lifestyle",
+      "Culture & Sport"
+    ]
+  },
+  "clients": {
+    "num": "04",
+    "label": "Clients",
+    "title": "We work with Czech\nand international brands.",
+    "desc": "Our clients include market leaders and innovative start-ups. For some we built communications from day one, for others we help achieve long-term goals.",
+    "refTitle": "Interested in details, references or our clients' opinions?",
+    "refItems": [
+      "Client feedback in a related industry",
+      "A case study related to the service you are interested in",
+      "Specific media coverage, articles, videos or successfully executed events"
+    ],
+    "refCta": "Write to us →"
+  },
+  "contact": {
+    "num": "05",
+    "label": "Contact",
+    "title": "Need to set up\nyour\ncommunications?",
+    "desc": "We'll be happy to prepare a proposal for your brief.",
+    "labels": {
+      "company": "Company",
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email",
+      "ico": "Company ID"
+    },
+    "values": {
+      "company": "Phoenix Communication a.s.",
+      "companyNote": "CTK Building",
+      "address": "Opletalova 918/7\n110 00 Prague 1",
+      "phone": "+420 222 510 799",
+      "email": "praha@phoenixcom.cz",
+      "ico": "28976126"
+    },
+    "photoCaption": "Opletalova 918/7, Prague 1",
+    "photoCaptionNote": "CTK Building · 110 00 Prague 1"
+  },
+  "feedback": {
+    "label": "Your feedback on the design",
+    "name": "Your name",
+    "email": "Email (optional)",
+    "text": "What you like, what you'd change, what's missing…",
+    "send": "Send →"
+  },
+  "footer": {
+    "copy": "© 2025 Phoenix Communication a.s. — Company ID 28976126"
+  }
+}

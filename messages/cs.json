@@ -1,0 +1,141 @@
+{
+  "metadata": {
+    "title": "Phoenix Communication — PR agentura Praha",
+    "description": "Komunikační agentura působící na česko-slovenském trhu od roku 2009. Strategické PR, media relations, sociální sítě."
+  },
+  "nav": {
+    "about": "O agentuře",
+    "services": "Služby",
+    "expertise": "Expertíza",
+    "clients": "Klienti",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "kicker": "PR & Media Relations · od roku 2009",
+    "tags": [
+      "15+ let zkušeností",
+      "Silné vztahy s médii",
+      "Individuální přístup",
+      "Mezinárodní přesah",
+      "Orientace na výsledky"
+    ],
+    "claim1": "Dobrá",
+    "claim2": "reputace",
+    "claim3": "není",
+    "claim4": "náhoda.",
+    "desc": "Komunikační agentura působící na česko-slovenském trhu od roku 2009. Pomáháme firmám komunikovat s médii, veřejností i vlastními lidmi.",
+    "cta": "Kontaktujte nás"
+  },
+  "stats": {
+    "items": [
+      { "num": "15+", "label": "let na trhu" },
+      { "num": "2009", "label": "rok vzniku agentury" },
+      { "num": "CZ–SK", "label": "primární trh" },
+      { "num": "EU", "label": "mezinárodní projekty" }
+    ]
+  },
+  "about": {
+    "num": "01",
+    "label": "O agentuře",
+    "headline": "Strategicky.\nSrozumitelně.\nS důrazem na\nvýsledek.",
+    "points": [
+      "Jsme komunikační agentura působící na česko-slovenském trhu od roku 2009.",
+      "Pomáháme firmám komunikovat s médii, veřejností i vlastními lidmi. Strategicky, srozumitelně a s důrazem na výsledek.",
+      "Propojujeme analytické myšlení, kreativitu a zkušenosti — vlastní i expertízu stálých spolupracovníků z nejrůznějších oborů.",
+      "Intenzivně a dlouhodobě budujeme vztahy s novináři napříč obory.",
+      "Ke každému klientovi přistupujeme individuálně. Bez univerzálních šablon.",
+      "Participujeme na mezinárodních projektech v rámci Evropy."
+    ]
+  },
+  "services": {
+    "num": "02",
+    "label": "Služby",
+    "title": "Poskytované\nslužby",
+    "items": [
+      {
+        "name": "Strategické PR",
+        "desc": "Komunikační strategie, kampaně, reputační management včetně krizové komunikace."
+      },
+      {
+        "name": "Media Relations",
+        "desc": "Dlouhodobá práce s médii, mediální výstupy a školení manažerů."
+      },
+      {
+        "name": "Sociální sítě",
+        "desc": "Obsah, správa profilů, kampaně a výkonnostní podpora."
+      },
+      {
+        "name": "Influencer Marketing",
+        "desc": "Výběr vhodných osobností, smluvní vztahy a kontrola jejich plnění."
+      },
+      {
+        "name": "Interní komunikace",
+        "desc": "Komunikace směrem k zaměstnancům i obchodním partnerům."
+      },
+      {
+        "name": "Eventy & Projekty",
+        "desc": "Setkání pro média, influencery, partnery i širokou veřejnost."
+      }
+    ]
+  },
+  "expertise": {
+    "num": "03",
+    "label": "Expertíza",
+    "title": "Sektory,\nve kterých\nse pohybujeme.",
+    "desc": "Zkušenosti máme napříč různými odvětvími — od energetiky přes technologie až po kulturu a sport.",
+    "items": [
+      "Energetika & obnovitelné zdroje",
+      "Technologie & IT",
+      "Spotřební elektronika",
+      "Medicína & zdravotnictví",
+      "Kosmetika & lifestyle",
+      "Kultura & sport"
+    ]
+  },
+  "clients": {
+    "num": "04",
+    "label": "Klienti",
+    "title": "Spolupracujeme s českými\ni mezinárodními značkami.",
+    "desc": "Mezi našimi klienty jsou lídři trhu i inovativní start-upy. Některým jsme komunikaci vybudovali od prvního okamžiku, jiným pomáháme plnit dlouhodobě nastavené cíle.",
+    "refTitle": "Zajímají vás detaily, reference nebo názor našich klientů?",
+    "refItems": [
+      "Zpětná vazba klientů v souvisejícím oboru",
+      "Případová studie týkající se služby, která vás zajímá",
+      "Konkrétní mediální výstupy, články, videa nebo úspěšně realizované akce"
+    ],
+    "refCta": "Napište nám →"
+  },
+  "contact": {
+    "num": "05",
+    "label": "Kontakt",
+    "title": "Potřebujete\nnastavit\nkomunikaci?",
+    "desc": "Rádi zpracujeme návrh k vašemu zadání.",
+    "labels": {
+      "company": "Společnost",
+      "address": "Adresa",
+      "phone": "Telefon",
+      "email": "E-mail",
+      "ico": "IČO"
+    },
+    "values": {
+      "company": "Phoenix Communication a.s.",
+      "companyNote": "Budova ČTK",
+      "address": "Opletalova 918/7\n110 00 Praha 1",
+      "phone": "+420 222 510 799",
+      "email": "praha@phoenixcom.cz",
+      "ico": "28976126"
+    },
+    "photoCaption": "Opletalova 918/7, Praha 1",
+    "photoCaptionNote": "Budova ČTK · 110 00 Praha 1"
+  },
+  "feedback": {
+    "label": "Váš feedback k návrhu",
+    "name": "Vaše jméno",
+    "email": "E-mail (nepovinné)",
+    "text": "Co se vám líbí, co byste změnili, co chybí…",
+    "send": "Odeslat →"
+  },
+  "footer": {
+    "copy": "© 2025 Phoenix Communication a.s. — IČO 28976126"
+  }
+}
