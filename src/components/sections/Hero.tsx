@@ -8,11 +8,11 @@ export default function Hero() {
   const tags: string[] = t.raw("tags");
 
   return (
-    <section id="hero" className="grid grid-cols-1 md:grid-cols-2 min-h-screen pt-20">
-      {/* Right - dark panel (order-first on mobile) */}
-      <div className="order-first md:order-last bg-hero-dark relative flex flex-col items-center justify-center min-h-[240px] md:min-h-[600px] overflow-hidden">
-        {/* Stripes */}
-        <div className="absolute inset-0 flex flex-col">
+    <section id="hero" className="grid grid-cols-1 md:grid-cols-2 min-h-[100svh] pt-14 md:pt-20">
+      {/* Right - dark panel (order-first on mobile, compact strip) */}
+      <div className="order-first md:order-last bg-hero-dark relative flex items-center justify-center gap-4 py-8 md:py-0 md:flex-col md:min-h-[600px] overflow-hidden">
+        {/* Stripes - desktop only */}
+        <div className="absolute inset-0 hidden md:flex flex-col">
           {Array.from({ length: 8 }).map((_, i) => (
             <div key={i} className="flex-1 border-b border-white/[0.04]" />
           ))}
@@ -24,23 +24,23 @@ export default function Hero() {
           alt="Phoenix"
           width={200}
           height={200}
-          className="w-[110px] md:w-[200px] animate-float-bird drop-shadow-[0_0_40px_rgba(200,37,30,0.3)] mix-blend-screen relative z-10"
+          className="w-[44px] md:w-[200px] animate-float-bird drop-shadow-[0_0_40px_rgba(200,37,30,0.3)] mix-blend-screen relative z-10"
         />
 
         {/* Label */}
-        <p className="font-syne text-[11px] font-semibold tracking-[0.2em] uppercase text-white/35 mt-6 relative z-10">
+        <p className="font-syne text-[10px] md:text-[11px] font-semibold tracking-[0.15em] md:tracking-[0.2em] uppercase text-white/40 md:mt-6 relative z-10">
           {t("kicker")}
         </p>
       </div>
 
       {/* Left - white panel */}
-      <div className="bg-white flex flex-col justify-center px-6 py-12 md:px-[60px] md:py-[80px]">
+      <div className="bg-white flex flex-col justify-center px-5 py-8 md:px-[60px] md:py-[80px]">
         {/* Tags */}
-        <div className="flex flex-wrap gap-2 mb-8 animate-fade-in-up-1">
+        <div className="flex flex-wrap gap-1.5 md:gap-2 mb-6 md:mb-8 animate-fade-in-up-1">
           {tags.map((tag: string) => (
             <span
               key={tag}
-              className="border border-gray-300 rounded-sm px-3.5 py-1.5 text-[11px] text-gray-500"
+              className="border border-gray-300 rounded-sm px-2.5 py-1 text-[10px] md:px-3.5 md:py-1.5 md:text-[11px] text-gray-500"
             >
               {tag}
             </span>
@@ -48,7 +48,7 @@ export default function Hero() {
         </div>
 
         {/* Claim */}
-        <h1 className="font-syne text-[36px] md:text-[clamp(36px,4.5vw,60px)] font-semibold leading-[1.05] mb-7 animate-fade-in-up-2">
+        <h1 className="font-syne text-[28px] sm:text-[34px] md:text-[clamp(36px,4.5vw,60px)] font-semibold leading-[1.08] mb-5 md:mb-7 animate-fade-in-up-2">
           {t("claim1")}
           <br />
           {t("claim2")}
@@ -58,7 +58,7 @@ export default function Hero() {
         </h1>
 
         {/* Description */}
-        <p className="text-base font-light leading-[1.75] text-gray-600 max-w-[420px] mb-10 animate-fade-in-up-3">
+        <p className="text-[14px] md:text-base font-light leading-[1.7] text-gray-600 max-w-[420px] mb-7 md:mb-10 animate-fade-in-up-3">
           {t("desc")}
         </p>
 

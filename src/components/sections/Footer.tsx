@@ -9,10 +9,10 @@ export default function Footer() {
   return (
     <footer className="bg-[#111]">
       {/* Top row — logo + nav + socials */}
-      <div className="border-t border-white/[0.06] px-6 md:px-14 py-12 md:py-16">
-        <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-[1fr_auto_auto] gap-10 md:gap-20 items-start">
+      <div className="border-t border-white/[0.06] px-5 md:px-14 py-10 md:py-16">
+        <div className="max-w-[1200px] mx-auto grid grid-cols-2 md:grid-cols-[1fr_auto_auto] gap-8 md:gap-20 items-start">
           {/* Logo + tagline */}
-          <div>
+          <div className="col-span-2 md:col-span-1">
             <div className="flex items-center gap-3 mb-4">
               <Image
                 src="/images/phoenix-red.png"
@@ -77,7 +77,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar — copyright + lang */}
-      <div className="border-t border-white/[0.06] px-6 md:px-14 py-4">
+      <div className="border-t border-white/[0.06] px-5 md:px-14 py-4 safe-bottom">
         <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center gap-3">
           <p className="text-[10px] font-light text-white/25 text-center md:text-left">
             {t("copy")}

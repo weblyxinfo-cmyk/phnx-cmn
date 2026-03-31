@@ -12,14 +12,14 @@ export default function StatsBar() {
         {items.map((item, i) => (
           <div
             key={i}
-            className={`px-5 py-6 md:px-12 md:py-11 hover:bg-red-dark transition-colors ${
+            className={`px-5 py-5 md:px-12 md:py-11 hover:bg-red-dark transition-colors ${
               i < items.length - 1 ? "md:border-r md:border-white/15" : ""
-            }`}
+            } ${i < 2 ? "border-b border-white/10 md:border-b-0" : ""}`}
           >
-            <p className="font-syne text-[30px] md:text-[40px] font-semibold text-white leading-none mb-2">
+            <p className="font-syne text-[26px] sm:text-[30px] md:text-[40px] font-semibold text-white leading-none mb-1.5 md:mb-2">
               {item.num}
             </p>
-            <p className="text-[13px] font-light text-white/70">
+            <p className="text-[12px] md:text-[13px] font-light text-white/70 leading-snug">
               {item.label}
             </p>
           </div>

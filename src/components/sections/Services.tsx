@@ -94,7 +94,7 @@ export default function Services() {
   const items: { name: string; desc: string }[] = t.raw("items");
 
   return (
-    <section id="services" className="bg-gray-900 px-6 py-14 md:px-[60px] md:py-[120px]">
+    <section id="services" className="bg-gray-900 px-5 py-12 md:px-[60px] md:py-[120px]">
       {/* Header */}
       <div className="flex flex-col md:flex-row md:justify-between md:items-end mb-12 md:mb-20 gap-4">
         <p className="font-syne text-[11px] font-bold tracking-[0.18em] uppercase text-white/40">
@@ -112,7 +112,7 @@ export default function Services() {
           return (
             <div
               key={i}
-              className="group bg-gray-900 p-7 md:p-[52px_44px] relative overflow-hidden transition-colors hover:bg-gray-800"
+              className="group bg-gray-900 p-6 md:p-[52px_44px] relative overflow-hidden transition-colors hover:bg-gray-800"
             >
               {/* Red bottom line */}
               <div className="absolute bottom-0 left-0 h-0.5 bg-red w-8 group-hover:w-full transition-all duration-400" />
@@ -123,7 +123,7 @@ export default function Services() {
                 </div>
               )}
 
-              <h3 className="font-syne text-[19px] font-medium text-white mb-4 leading-[1.3]">
+              <h3 className="font-syne text-[17px] md:text-[19px] font-medium text-white mb-3 md:mb-4 leading-[1.3]">
                 {item.name}
               </h3>
               <p className="text-[13px] leading-[1.75] text-gray-400 font-light">

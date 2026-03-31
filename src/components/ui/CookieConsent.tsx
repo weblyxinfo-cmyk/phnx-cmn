@@ -34,35 +34,33 @@ export default function CookieConsent() {
         ${visible ? "translate-y-0" : "translate-y-full"}
       `}
     >
-      <div className="bg-[#111] border-t border-red/30">
-        <div className="max-w-[1200px] mx-auto px-6 md:px-14 py-5 flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8">
-          {/* Icon + text */}
-          <div className="flex items-start gap-3 flex-1 min-w-0">
-            <div className="w-1.5 h-1.5 rounded-full bg-red flex-shrink-0 mt-2" />
-            <div>
-              <p className="text-[13px] font-light text-white/70 leading-relaxed">
-                {t("text")}
-              </p>
+      <div className="bg-[#111]/95 backdrop-blur-sm border-t border-red/30 safe-bottom">
+        <div className="max-w-[1200px] mx-auto px-4 md:px-14 py-3 md:py-5 flex items-center gap-3 md:gap-8">
+          {/* Dot + text */}
+          <div className="flex items-start gap-2.5 flex-1 min-w-0">
+            <div className="w-1.5 h-1.5 rounded-full bg-red flex-shrink-0 mt-1.5" />
+            <p className="text-[12px] md:text-[13px] font-light text-white/70 leading-snug">
+              {t("text")}{" "}
               <a
                 href="#"
-                className="text-[11px] text-red/70 hover:text-red transition-colors mt-1 inline-block"
+                className="text-red/70 hover:text-red transition-colors"
               >
                 {t("more")}
               </a>
-            </div>
+            </p>
           </div>
 
-          {/* Buttons */}
-          <div className="flex items-center gap-3 flex-shrink-0">
+          {/* Buttons - inline, compact */}
+          <div className="flex items-center gap-2 flex-shrink-0">
             <button
               onClick={decline}
-              className="text-[11px] font-medium tracking-[0.06em] uppercase text-white/40 hover:text-white/70 transition-colors px-4 py-2.5 border border-white/10 hover:border-white/20"
+              className="text-[10px] md:text-[11px] font-medium tracking-[0.06em] uppercase text-white/40 hover:text-white/70 transition-colors px-3 py-2 border border-white/10 hover:border-white/20"
             >
               {t("decline")}
             </button>
             <button
               onClick={accept}
-              className="text-[11px] font-medium tracking-[0.06em] uppercase text-white bg-red hover:bg-red-dark transition-colors px-5 py-2.5"
+              className="text-[10px] md:text-[11px] font-medium tracking-[0.06em] uppercase text-white bg-red hover:bg-red-dark transition-colors px-4 py-2"
             >
               {t("accept")}
             </button>

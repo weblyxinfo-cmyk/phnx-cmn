@@ -7,14 +7,14 @@ export default function Expertise() {
   const items: string[] = t.raw("items");
 
   return (
-    <section id="expertise" className="bg-white px-6 py-14 md:px-[60px] md:py-[120px]">
+    <section id="expertise" className="bg-white px-5 py-12 md:px-[60px] md:py-[120px]">
       {/* Section label */}
       <p className="font-syne text-[11px] font-bold tracking-[0.18em] uppercase text-red mb-10">
         {t("num")} &mdash; {t("label")}
       </p>
 
       {/* Inner grid */}
-      <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-10 md:gap-[100px]">
+      <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 md:gap-[100px]">
         {/* Left */}
         <div>
           <h2 className="font-syne text-[clamp(24px,2.5vw,36px)] font-medium text-black leading-[1.15] mb-6 whitespace-pre-line">
