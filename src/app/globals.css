@@ -71,10 +71,7 @@ body {
   }
 }
 
-/* Better tap targets on mobile */
+/* Smooth touch scrolling */
 @media (pointer: coarse) {
-  a, button {
-    min-height: 44px;
-    min-width: 44px;
-  }
+  * { -webkit-tap-highlight-color: transparent; }
 }

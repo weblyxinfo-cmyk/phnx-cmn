@@ -59,7 +59,7 @@ export default function Contact() {
             {t("num")} &mdash; {t("label")}
           </p>
 
-          <h2 className="font-syne text-[26px] sm:text-[clamp(28px,3.5vw,48px)] font-medium text-white leading-[1.1] mb-10 md:mb-12 whitespace-pre-line">
+          <h2 className="font-syne text-[24px] sm:text-[clamp(28px,3.5vw,48px)] font-medium text-white leading-[1.1] mb-8 md:mb-12 whitespace-pre-line">
             {t("title")}
           </h2>
 

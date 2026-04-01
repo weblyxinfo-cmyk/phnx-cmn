@@ -46,21 +46,21 @@ export default function Clients() {
       <p className="font-syne text-[11px] font-bold tracking-[0.18em] uppercase text-red mb-5">
         {t("num")} &mdash; {t("label")}
       </p>
-      <h2 className="font-syne text-[clamp(24px,2.5vw,36px)] font-medium text-black leading-[1.15] mb-4 whitespace-pre-line">
+      <h2 className="font-syne text-[22px] sm:text-[clamp(24px,2.5vw,36px)] font-medium text-black leading-[1.15] mb-3 md:mb-4 whitespace-pre-line">
         {t("title")}
       </h2>
-      <p className="text-[15px] font-light leading-[1.75] text-gray-600 max-w-[600px] mb-12">
+      <p className="text-[14px] md:text-[15px] font-light leading-[1.7] text-gray-600 max-w-[600px] mb-8 md:mb-12">
         {t("desc")}
       </p>
 
       {/* Marquee rows */}
-      <div className="flex flex-col gap-3 mb-16">
+      <div className="flex flex-col gap-2 md:gap-3 mb-10 md:mb-16">
         <MarqueeTrack partners={row1} direction="left" speed={40} />
         <MarqueeTrack partners={row2} direction="right" speed={35} />
       </div>
 
       {/* Reference box */}
-      <div className="bg-white border-l-4 border-red p-6 md:p-10 grid grid-cols-1 md:grid-cols-[1fr_auto] gap-6 md:gap-10 items-start">
+      <div className="bg-white border-l-4 border-red p-5 md:p-10 grid grid-cols-1 md:grid-cols-[1fr_auto] gap-4 md:gap-10 items-start">
         <div>
           <h3 className="font-syne text-[17px] font-medium text-black mb-5 leading-[1.4]">
             {t("refTitle")}

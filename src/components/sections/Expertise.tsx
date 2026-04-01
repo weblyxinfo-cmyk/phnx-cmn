@@ -17,7 +17,7 @@ export default function Expertise() {
       <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 md:gap-[100px]">
         {/* Left */}
         <div>
-          <h2 className="font-syne text-[clamp(24px,2.5vw,36px)] font-medium text-black leading-[1.15] mb-6 whitespace-pre-line">
+          <h2 className="font-syne text-[22px] sm:text-[clamp(24px,2.5vw,36px)] font-medium text-black leading-[1.15] mb-4 md:mb-6 whitespace-pre-line">
             {t("title")}
           </h2>
           <p className="text-[15px] font-light leading-[1.75] text-gray-600">
@@ -26,12 +26,12 @@ export default function Expertise() {
         </div>
 
         {/* Right - items grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-0 border-t border-gray-200">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-0 border-t border-gray-200">
           {items.map((item, i) => (
             <div
               key={i}
-              className={`py-5 border-b border-gray-200 flex items-center gap-3.5 ${
-                i % 2 === 0 ? "md:pr-6" : "md:pl-6"
+              className={`py-3.5 md:py-5 border-b border-gray-200 flex items-center gap-3 md:gap-3.5 ${
+                i % 2 === 0 ? "sm:pr-6" : "sm:pl-6"
               }`}
             >
               <span className="inline-block w-5 h-px bg-red flex-shrink-0" />

@@ -96,37 +96,37 @@ export default function Services() {
   return (
     <section id="services" className="bg-gray-900 px-5 py-12 md:px-[60px] md:py-[120px]">
       {/* Header */}
-      <div className="flex flex-col md:flex-row md:justify-between md:items-end mb-12 md:mb-20 gap-4">
+      <div className="flex flex-col md:flex-row md:justify-between md:items-end mb-8 md:mb-20 gap-3 md:gap-4">
         <p className="font-syne text-[11px] font-bold tracking-[0.18em] uppercase text-white/40">
           {t("num")} &mdash; {t("label")}
         </p>
-        <h2 className="font-syne text-[clamp(28px,3vw,44px)] font-medium text-white max-w-[500px] leading-[1.15] whitespace-pre-line">
+        <h2 className="font-syne text-[22px] sm:text-[clamp(28px,3vw,44px)] font-medium text-white max-w-[500px] leading-[1.15] whitespace-pre-line">
           {t("title")}
         </h2>
       </div>
 
       {/* Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/[0.08]">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-px bg-white/[0.08]">
         {items.map((item, i) => {
           const Icon = icons[i];
           return (
             <div
               key={i}
-              className="group bg-gray-900 p-6 md:p-[52px_44px] relative overflow-hidden transition-colors hover:bg-gray-800"
+              className="group bg-gray-900 p-4 sm:p-6 md:p-[52px_44px] relative overflow-hidden transition-colors hover:bg-gray-800"
             >
               {/* Red bottom line */}
               <div className="absolute bottom-0 left-0 h-0.5 bg-red w-8 group-hover:w-full transition-all duration-400" />
 
               {Icon && (
-                <div className="mb-7">
+                <div className="mb-4 md:mb-7 [&>svg]:w-8 [&>svg]:h-8 md:[&>svg]:w-11 md:[&>svg]:h-11">
                   <Icon />
                 </div>
               )}
 
-              <h3 className="font-syne text-[17px] md:text-[19px] font-medium text-white mb-3 md:mb-4 leading-[1.3]">
+              <h3 className="font-syne text-[14px] sm:text-[17px] md:text-[19px] font-medium text-white mb-2 md:mb-4 leading-[1.3]">
                 {item.name}
               </h3>
-              <p className="text-[13px] leading-[1.75] text-gray-400 font-light">
+              <p className="text-[11px] sm:text-[13px] leading-[1.6] md:leading-[1.75] text-gray-400 font-light">
                 {item.desc}
               </p>
             </div>
