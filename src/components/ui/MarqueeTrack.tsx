@@ -1,8 +1,9 @@
 "use client";
+import Image from "next/image";
 
 interface Partner {
   name: string;
-  color: string;
+  logo: string;
 }
 
 interface MarqueeTrackProps {
@@ -21,7 +22,7 @@ export default function MarqueeTrack({
   return (
     <div className="overflow-hidden group">
       <div
-        className={`flex whitespace-nowrap group-hover:[animation-play-state:paused] ${
+        className={`flex items-center whitespace-nowrap group-hover:[animation-play-state:paused] ${
           direction === "left" ? "animate-marquee-l" : "animate-marquee-r"
         }`}
         style={{
@@ -29,13 +30,18 @@ export default function MarqueeTrack({
         }}
       >
         {tripled.map((partner, i) => (
-          <span
+          <div
             key={`${partner.name}-${i}`}
-            className="inline-flex items-center border rounded-sm px-3 py-1.5 mx-1 text-[11px] sm:px-4 sm:py-2 sm:mx-1.5 sm:text-[13px] font-medium transition-colors duration-200 border-gray-300 text-gray-600 hover:border-[var(--lc)] hover:text-[var(--lc)] cursor-default flex-shrink-0"
-            style={{ "--lc": partner.color } as React.CSSProperties}
+            className="inline-flex items-center justify-center mx-4 sm:mx-6 md:mx-8 flex-shrink-0 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
           >
-            {partner.name}
-          </span>
+            <Image
+              src={partner.logo}
+              alt={partner.name}
+              width={120}
+              height={48}
+              className="h-8 sm:h-10 md:h-12 w-auto object-contain"
+            />
+          </div>
         ))}
       </div>
     </div>
