@@ -23,26 +23,25 @@ export default function LanguageSwitcher({
 
   return (
     <div
-      className={`inline-flex items-center rounded-sm overflow-hidden border ${
-        dark ? "border-white/10" : "border-gray-200"
+      className={`inline-flex items-center gap-1 rounded-full p-1 ${
+        dark ? "bg-white/[0.04]" : "bg-black/[0.04]"
       } ${className}`}
     >
-      {routing.locales.map((loc, i) => {
+      {routing.locales.map((loc) => {
         const isActive = locale === loc;
         return (
           <button
             key={loc}
             onClick={() => switchLocale(loc)}
             className={`
-              relative font-syne text-[11px] font-semibold tracking-[0.08em] uppercase
-              px-3 py-1.5 transition-all duration-200
-              ${i > 0 ? (dark ? "border-l border-white/10" : "border-l border-gray-200") : ""}
+              font-syne text-[10px] font-semibold tracking-[0.1em] uppercase
+              rounded-full px-3 py-1.5 transition-all duration-200
               ${
                 isActive
-                  ? "bg-red text-white"
+                  ? "bg-red text-white shadow-[0_1px_4px_rgba(200,37,30,0.3)]"
                   : dark
-                    ? "bg-transparent text-gray-500 hover:text-white hover:bg-white/5"
-                    : "bg-transparent text-gray-400 hover:text-black hover:bg-gray-50"
+                    ? "text-white/30 hover:text-white/60"
+                    : "text-gray-400 hover:text-gray-700"
               }
             `}
           >

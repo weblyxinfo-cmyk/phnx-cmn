@@ -7,90 +7,120 @@ export default function Footer() {
   const t = useTranslations("footer");
 
   return (
-    <footer className="bg-[#111]">
-      {/* Top row — logo + nav + socials */}
-      <div className="border-t border-white/[0.06] px-5 md:px-14 py-10 md:py-16">
-        <div className="max-w-[1200px] mx-auto grid grid-cols-2 md:grid-cols-[1fr_auto_auto] gap-8 md:gap-20 items-start">
-          {/* Logo + tagline */}
-          <div className="col-span-2 md:col-span-1">
-            <div className="flex items-center gap-3 mb-4">
-              <Image
-                src="/images/phoenix-red.png"
-                alt="Phoenix Communication"
-                width={32}
-                height={32}
-                className="h-7 w-auto opacity-80"
-              />
-              <span className="font-syne text-[11px] font-medium tracking-[0.08em] text-white/60 uppercase">
-                Phoenix Communication
-              </span>
+    <footer className="bg-[#0A0A0A] relative overflow-hidden">
+      {/* Subtle red glow */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-px bg-gradient-to-r from-transparent via-red/40 to-transparent" />
+
+      {/* Main footer content */}
+      <div className="px-5 md:px-14 pt-14 pb-10 md:pt-20 md:pb-14">
+        <div className="max-w-[1200px] mx-auto">
+          {/* Top: Logo + CTA */}
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-12 md:mb-16">
+            <div>
+              <div className="flex items-center gap-3 mb-3">
+                <Image
+                  src="/images/phoenix-red.png"
+                  alt="Phoenix Communication"
+                  width={36}
+                  height={36}
+                  className="h-8 w-auto"
+                />
+                <span className="font-syne text-[13px] font-semibold tracking-[0.06em] text-white/80 uppercase">
+                  Phoenix Communication
+                </span>
+              </div>
+              <p className="text-[13px] font-light text-white/30 leading-relaxed max-w-[380px]">
+                {t("tagline")}
+              </p>
             </div>
-            <p className="text-[13px] font-light text-white/30 leading-relaxed max-w-[320px]">
-              {t("tagline")}
-            </p>
+            <a
+              href="#contact"
+              className="group inline-flex items-center gap-3 font-syne text-[11px] font-bold tracking-[0.14em] uppercase text-red hover:text-white transition-colors"
+            >
+              {t("links.contact")}
+              <span className="inline-block w-6 h-px bg-red group-hover:w-10 group-hover:bg-white transition-all duration-300" />
+            </a>
           </div>
 
-          {/* Quick links */}
-          <div>
-            <div className="font-syne text-[9px] font-bold tracking-[0.16em] uppercase text-red/60 mb-4">
-              {t("navLabel")}
+          {/* Middle: 3 columns */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-16 pb-12 md:pb-16 border-b border-white/[0.06]">
+            {/* Nav */}
+            <div>
+              <div className="font-syne text-[9px] font-bold tracking-[0.2em] uppercase text-white/20 mb-5">
+                {t("navLabel")}
+              </div>
+              <nav className="flex flex-col gap-2">
+                {["about", "services", "expertise", "clients", "contact"].map(
+                  (id) => (
+                    <a
+                      key={id}
+                      href={`#${id}`}
+                      className="text-[13px] font-light text-white/35 hover:text-red hover:pl-2 transition-all duration-200"
+                    >
+                      {t(`links.${id}`)}
+                    </a>
+                  )
+                )}
+              </nav>
             </div>
-            <nav className="flex flex-col gap-2.5">
-              {["about", "services", "expertise", "clients", "contact"].map(
-                (id) => (
-                  <a
-                    key={id}
-                    href={`#${id}`}
-                    className="text-[13px] font-light text-white/40 hover:text-red transition-colors"
-                  >
-                    {t(`links.${id}`)}
-                  </a>
-                )
-              )}
-            </nav>
-          </div>
 
-          {/* Contact info */}
-          <div>
-            <div className="font-syne text-[9px] font-bold tracking-[0.16em] uppercase text-red/60 mb-4">
-              {t("contactLabel")}
+            {/* Contact */}
+            <div>
+              <div className="font-syne text-[9px] font-bold tracking-[0.2em] uppercase text-white/20 mb-5">
+                {t("contactLabel")}
+              </div>
+              <div className="flex flex-col gap-2.5">
+                <a
+                  href="tel:+420222510799"
+                  className="text-[13px] font-light text-white/35 hover:text-red transition-colors"
+                >
+                  +420 222 510 799
+                </a>
+                <a
+                  href="mailto:praha@phoenixcom.cz"
+                  className="text-[13px] font-light text-white/35 hover:text-red transition-colors"
+                >
+                  praha@phoenixcom.cz
+                </a>
+                <span className="text-[12px] font-light text-white/20 mt-1">
+                  Opletalova 918/7
+                  <br />
+                  110 00 Praha 1
+                </span>
+              </div>
             </div>
-            <div className="flex flex-col gap-2">
-              <a
-                href="tel:+420222510799"
-                className="text-[13px] font-light text-white/40 hover:text-red transition-colors"
-              >
-                +420 222 510 799
-              </a>
-              <a
-                href="mailto:praha@phoenixcom.cz"
-                className="text-[13px] font-light text-white/40 hover:text-red transition-colors"
-              >
-                praha@phoenixcom.cz
-              </a>
-              <span className="text-[13px] font-light text-white/25 mt-1">
-                Opletalova 918/7, Praha 1
+
+            {/* Company */}
+            <div>
+              <div className="font-syne text-[9px] font-bold tracking-[0.2em] uppercase text-white/20 mb-5">
+                IČO
+              </div>
+              <span className="text-[13px] font-light text-white/35">
+                28976126
               </span>
+              <div className="mt-6">
+                <div className="font-syne text-[9px] font-bold tracking-[0.2em] uppercase text-white/20 mb-3">
+                  {t("navLabel")}
+                </div>
+                <LanguageSwitcher dark />
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Bottom bar — copyright + lang */}
-      <div className="border-t border-white/[0.06] px-5 md:px-14 py-4 safe-bottom">
-        <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center gap-3">
-          <p className="text-[10px] font-light text-white/25 text-center md:text-left">
+      {/* Bottom bar */}
+      <div className="px-5 md:px-14 py-4 safe-bottom">
+        <div className="max-w-[1200px] mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+          <p className="text-[10px] font-light text-white/15">
             {t("copy")}
           </p>
-          <div className="flex items-center gap-4">
-            <a
-              href="#"
-              className="text-[10px] font-light text-white/25 hover:text-white/50 transition-colors"
-            >
-              {t("privacy")}
-            </a>
-            <LanguageSwitcher dark />
-          </div>
+          <a
+            href="#"
+            className="text-[10px] font-light text-white/15 hover:text-white/40 transition-colors"
+          >
+            {t("privacy")}
+          </a>
         </div>
       </div>
     </footer>
