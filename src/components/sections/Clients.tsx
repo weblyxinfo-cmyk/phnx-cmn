@@ -13,6 +13,7 @@ const row1 = [
   { name: "NOARK", logo: "/images/partners/noark.png" },
   { name: "Fieldmann", logo: "/images/partners/fieldmann.png" },
   { name: "Pumpa", logo: "/images/partners/pumpa.png" },
+  { name: "IVF Cube" },
 ];
 
 const row2 = [
@@ -26,6 +27,7 @@ const row2 = [
   { name: "Stihl Timbersport", logo: "/images/partners/stihl-timbersport.png" },
   { name: "ÚNMZ", logo: "/images/partners/unmz.png" },
   { name: "ČAS", logo: "/images/partners/cas.png" },
+  { name: "Retlux" },
 ];
 
 export default function Clients() {
