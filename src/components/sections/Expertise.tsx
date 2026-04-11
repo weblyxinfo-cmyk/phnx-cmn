@@ -2,35 +2,34 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
-type TileKey =
-  | "energetika"
-  | "technologie"
-  | "bydleni"
-  | "zdravi"
-  | "kosmetika"
-  | "lifestyle";
-
-const tileImages: Record<TileKey, string | null> = {
-  energetika: "/images/expertise/energetika.png",
-  technologie: "/images/expertise/technologie.png",
-  bydleni: null,
-  zdravi: null,
-  kosmetika: null,
-  lifestyle: null,
+type Tile = {
+  key: string;
+  img: string | null;
+  /** Column span in 12-col grid (desktop) */
+  span: number;
+  /** Aspect ratio for desktop */
+  aspect: string;
 };
 
-const tileOrder: TileKey[] = [
-  "energetika",
-  "technologie",
-  "bydleni",
-  "zdravi",
-  "kosmetika",
-  "lifestyle",
+const tiles: Tile[] = [
+  // Row 1 — two hero tiles matching client's sample proportions
+  { key: "energetika", img: "/images/expertise/energetika.png", span: 5, aspect: "aspect-[4/3]" },
+  { key: "technologie", img: "/images/expertise/technologie.png", span: 7, aspect: "aspect-[21/9]" },
+  // Row 2 — four equal tiles
+  { key: "bydleni", img: null, span: 3, aspect: "aspect-[4/3]" },
+  { key: "zdravi", img: null, span: 3, aspect: "aspect-[4/3]" },
+  { key: "kosmetika", img: null, span: 3, aspect: "aspect-[4/3]" },
+  { key: "lifestyle", img: null, span: 3, aspect: "aspect-[4/3]" },
 ];
+
+const spanClass: Record<number, string> = {
+  3: "md:col-span-3",
+  5: "md:col-span-5",
+  7: "md:col-span-7",
+};
 
 export default function Expertise() {
   const t = useTranslations("expertise");
-
   const items: string[] = t.raw("items");
 
   return (
@@ -41,8 +40,8 @@ export default function Expertise() {
       </p>
 
       {/* Headline block */}
-      <div className="max-w-[1200px] mb-10 md:mb-16">
-        <h2 className="font-syne text-[26px] sm:text-[clamp(28px,3vw,44px)] font-medium text-black leading-[1.1] mb-5 md:mb-7 whitespace-pre-line">
+      <div className="grid grid-cols-1 md:grid-cols-[1fr_1.4fr] gap-6 md:gap-16 items-end mb-10 md:mb-16 max-w-[1280px]">
+        <h2 className="font-syne text-[30px] sm:text-[clamp(32px,3.2vw,48px)] font-medium text-black leading-[1.05] whitespace-pre-line">
           {t("title")}
         </h2>
         <p className="text-[15px] md:text-[17px] font-light leading-[1.75] text-gray-600 max-w-[640px]">
@@ -50,48 +49,59 @@ export default function Expertise() {
         </p>
       </div>
 
-      {/* Tile grid 3x2 */}
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5">
-        {tileOrder.map((key, i) => {
-          const img = tileImages[key];
+      {/* Asymmetric mosaic grid */}
+      <div className="grid grid-cols-2 md:grid-cols-12 gap-3 md:gap-5">
+        {tiles.map((tile, i) => {
           const label = items[i];
           return (
             <div
-              key={key}
-              className="group relative aspect-[4/3] overflow-hidden bg-gray-900"
+              key={tile.key}
+              className={`group relative ${tile.aspect} ${spanClass[tile.span] ?? ""} overflow-hidden bg-gray-900`}
             >
-              {img ? (
+              {tile.img ? (
                 <Image
-                  src={img}
+                  src={tile.img}
                   alt={label}
                   fill
                   sizes="(max-width: 768px) 50vw, 33vw"
                   className="object-cover grayscale-[10%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                 />
               ) : (
-                <div className="absolute inset-0 bg-gradient-to-br from-gray-800 via-gray-900 to-black flex items-center justify-center">
-                  <svg
-                    width="44"
-                    height="44"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="1.2"
-                    className="text-white/25"
-                  >
-                    <rect x="3" y="3" width="18" height="18" rx="1" />
-                    <circle cx="9" cy="9" r="2" />
-                    <path d="M21 15l-5-5L5 21" />
-                  </svg>
+                <div className="absolute inset-0 bg-gradient-to-br from-[#141414] via-[#1a0e0e] to-black">
+                  {/* Subtle diagonal lines pattern */}
+                  <div
+                    className="absolute inset-0 opacity-[0.08]"
+                    style={{
+                      backgroundImage:
+                        "repeating-linear-gradient(45deg, transparent, transparent 8px, #C8251E 8px, #C8251E 9px)",
+                    }}
+                    aria-hidden="true"
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <svg
+                      width="40"
+                      height="40"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1"
+                      className="text-red/20"
+                      aria-hidden="true"
+                    >
+                      <rect x="3" y="3" width="18" height="18" rx="1" />
+                      <circle cx="8.5" cy="8.5" r="1.5" />
+                      <path d="M21 15l-5-5L5 21" />
+                    </svg>
+                  </div>
                 </div>
               )}
 
-              {/* Gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+              {/* Dark gradient overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/25 to-transparent" />
 
               {/* Label */}
               <div className="absolute inset-x-0 bottom-0 p-4 md:p-6">
-                <span className="inline-block w-6 h-px bg-red mb-2 md:mb-3" />
+                <span className="inline-block w-8 h-px bg-red mb-2 md:mb-3 group-hover:w-14 transition-[width] duration-400" />
                 <h3 className="font-syne text-[15px] sm:text-[18px] md:text-[22px] font-semibold text-white leading-tight">
                   {label}
                 </h3>
