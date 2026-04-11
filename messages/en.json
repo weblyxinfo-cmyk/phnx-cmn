@@ -160,7 +160,13 @@
     },
     "contactLabel": "Contact",
     "privacy": "Privacy Policy",
-    "madeBy": "website by"
+    "madeBy": "website by",
+    "statementLead": "Let's",
+    "statementMain": "talk.",
+    "emailLabel": "Email us",
+    "phoneLabel": "Call us",
+    "addressLabel": "Visit us",
+    "followLabel": "Follow"
   },
   "cookies": {
     "text": "This website uses cookies to ensure proper functionality and analyse traffic. By using this site, you agree to their use.",

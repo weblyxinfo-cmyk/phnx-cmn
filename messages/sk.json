@@ -160,7 +160,13 @@
     },
     "contactLabel": "Kontakt",
     "privacy": "Ochrana osobných údajov",
-    "madeBy": "web vyvinul"
+    "madeBy": "web vyvinul",
+    "statementLead": "Poďme",
+    "statementMain": "si pohovoriť.",
+    "emailLabel": "Napíšte nám",
+    "phoneLabel": "Zavolajte",
+    "addressLabel": "Nájdete nás",
+    "followLabel": "Sledujte"
   },
   "cookies": {
     "text": "Tento web používa cookies na zabezpečenie správneho fungovania a analýzu návštevnosti. Používaním webu súhlasíte s ich využitím.",
