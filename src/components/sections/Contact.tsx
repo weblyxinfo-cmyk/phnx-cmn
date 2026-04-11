@@ -84,19 +84,6 @@ export default function Contact() {
             ))}
           </div>
 
-          {/* Logo block */}
-          <div className="mt-10 md:mt-12 pt-8 md:pt-9 border-t border-white/[0.08] flex items-center gap-5">
-            <Image
-              src="/images/phoenix-logo-contact.png"
-              alt="Phoenix Communication"
-              width={120}
-              height={44}
-              className="h-[36px] md:h-[44px] w-auto opacity-70 mix-blend-screen"
-            />
-            <span className="text-xs text-gray-600 font-light">
-              phoenixcom.cz
-            </span>
-          </div>
         </div>
 
         {/* Right */}
