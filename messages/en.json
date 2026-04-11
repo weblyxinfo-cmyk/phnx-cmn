@@ -23,7 +23,7 @@
     "claim2": "reputation",
     "claim3": "is no",
     "claim4": "accident.",
-    "desc": "A communications agency active in the Czech-Slovak market since 2009. We help companies communicate with the media, the public, and their own people.",
+    "desc": "We are a communications agency active in the Czech-Slovak market since 2009. We help companies communicate with the media, the public, partners, and their own people.",
     "cta": "Get in touch"
   },
   "stats": {
@@ -47,25 +47,25 @@
     ]
   },
   "about": {
-    "num": "01",
+    "num": "",
     "label": "About",
-    "headline": "Strategic.\nClear.\nRelentlessly\nresults-focused.",
+    "headline": "We work\nstrategically.\nWe communicate\nclearly.\nWe stay focused on\nresults,\nwithout cookie-cutter playbooks.",
     "points": [
       "We are a communications agency active in the Czech and Slovak markets since 2009.",
-      "We help companies communicate with the media, the public, and their own people — strategically, clearly, and with a relentless focus on results.",
-      "We blend analytical rigour, creativity, and hands-on experience — our own and that of a trusted network of specialists across disciplines.",
+      "We help companies communicate with the media, the public, partners, and their own people — strategically, clearly, and with a relentless focus on results.",
+      "We blend analytical rigour, creativity, and our own experience with the expertise of a trusted network of specialists across the most diverse fields.",
       "We invest deeply and consistently in journalist relationships across sectors.",
       "Every client engagement is bespoke. No off-the-shelf playbooks.",
       "We deliver international projects across Europe."
     ]
   },
   "services": {
-    "num": "02",
-    "label": "Services",
-    "title": "What\nwe do",
+    "num": "",
+    "label": "Our Services",
+    "title": "Our\nservices",
     "items": [
       {
-        "name": "Strategic PR",
+        "name": "Strategic Consulting",
         "desc": "Communications strategy, integrated campaigns, and reputation management — including crisis response."
       },
       {
@@ -85,27 +85,27 @@
         "desc": "Employee engagement and partner communications that align with your external narrative."
       },
       {
-        "name": "Events & Projects",
+        "name": "Event Management & Projects",
         "desc": "Press events, influencer activations, partner gatherings, and public-facing experiences."
       }
     ]
   },
   "expertise": {
-    "num": "03",
+    "num": "",
     "label": "Expertise",
     "title": "Sectors\nwe know\ninside out.",
     "desc": "Our track record spans diverse industries — from energy and technology to culture and sport.",
     "items": [
-      "Energy & Renewables",
-      "Technology & IT",
-      "Consumer Electronics",
-      "Medical & Healthcare",
-      "Beauty & Lifestyle",
-      "Culture & Sport"
+      "Energy",
+      "Technology",
+      "Home & Garden",
+      "Health Care",
+      "Cosmetics",
+      "Lifestyle"
     ]
   },
   "clients": {
-    "num": "04",
+    "num": "",
     "label": "Clients",
     "title": "Trusted by Czech\nand international brands.",
     "desc": "Our portfolio includes market leaders and fast-moving start-ups alike. For some we built communications from scratch; for others we drive long-term strategic goals.",
@@ -118,7 +118,7 @@
     "refCta": "Get in touch →"
   },
   "contact": {
-    "num": "05",
+    "num": "",
     "label": "Contact",
     "title": "Ready to\nelevate your\ncommunications?",
     "desc": "We would be glad to put together a tailored proposal.",

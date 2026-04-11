@@ -55,8 +55,8 @@ export default function Contact() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
         {/* Left */}
         <div>
-          <p className="font-syne text-[11px] font-bold tracking-[0.18em] uppercase text-white/30 mb-5">
-            {t("num")} &mdash; {t("label")}
+          <p className="font-syne text-[11px] font-bold tracking-[0.18em] uppercase text-red mb-5">
+            {t("label")}
           </p>
 
           <h2 className="font-syne text-[24px] sm:text-[clamp(28px,3.5vw,48px)] font-medium text-white leading-[1.1] mb-8 md:mb-12 whitespace-pre-line">
@@ -68,16 +68,16 @@ export default function Contact() {
           </p>
 
           {/* Info grid */}
-          <div className="flex flex-col">
+          <div className="flex flex-col gap-3">
             {infoRows.map((row) => (
               <div
                 key={row.labelKey}
-                className="flex flex-col gap-1 py-4 border-b border-white/[0.07] sm:grid sm:grid-cols-[100px_1fr] md:grid-cols-[120px_1fr] sm:gap-0"
+                className="flex flex-col gap-1 py-1.5 sm:grid sm:grid-cols-[100px_1fr] md:grid-cols-[120px_1fr] sm:gap-0"
               >
                 <span className="font-syne text-[10px] sm:text-[11px] font-medium tracking-[0.12em] uppercase text-red/85">
                   {t(`labels.${row.labelKey}`)}
                 </span>
-                <span className="text-sm font-light text-gray-300 leading-[1.7]">
+                <span className="text-[15px] font-light text-gray-200 leading-[1.7]">
                   {row.render}
                 </span>
               </div>

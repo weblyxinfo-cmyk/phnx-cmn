@@ -34,23 +34,25 @@ export default function MarqueeTrack({
           partner.logo ? (
             <div
               key={`${partner.name}-${i}`}
-              className="inline-flex items-center justify-center mx-4 sm:mx-6 md:mx-8 flex-shrink-0 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+              className="flex items-center justify-center mx-2 sm:mx-3 md:mx-4 flex-shrink-0 w-[120px] h-[72px] sm:w-[140px] sm:h-[84px] md:w-[160px] md:h-[96px] grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
             >
               <Image
                 src={partner.logo}
                 alt={partner.name}
-                width={120}
-                height={48}
-                className="h-8 sm:h-10 md:h-12 w-auto object-contain"
+                width={240}
+                height={96}
+                className="max-h-[70%] max-w-[80%] w-auto h-auto object-contain"
               />
             </div>
           ) : (
-            <span
+            <div
               key={`${partner.name}-${i}`}
-              className="inline-flex items-center border rounded-sm px-3 py-1.5 mx-2 sm:mx-3 text-[11px] sm:text-[13px] font-medium transition-colors duration-200 border-gray-300 text-gray-500 hover:border-gray-600 hover:text-gray-800 cursor-default flex-shrink-0"
+              className="flex items-center justify-center mx-2 sm:mx-3 md:mx-4 flex-shrink-0 w-[120px] h-[72px] sm:w-[140px] sm:h-[84px] md:w-[160px] md:h-[96px]"
             >
-              {partner.name}
-            </span>
+              <span className="inline-flex items-center border rounded-sm px-3 py-1.5 text-[12px] sm:text-[14px] font-semibold transition-colors duration-200 border-gray-300 text-gray-600 hover:border-gray-600 hover:text-gray-900 cursor-default">
+                {partner.name}
+              </span>
+            </div>
           )
         )}
       </div>

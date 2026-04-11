@@ -39,7 +39,7 @@ export default function Clients() {
     <section id="clients" className="bg-gray-100 px-5 py-12 md:px-[60px] md:py-[120px]">
       {/* Header */}
       <p className="font-syne text-[11px] font-bold tracking-[0.18em] uppercase text-red mb-5">
-        {t("num")} &mdash; {t("label")}
+        {t("label")}
       </p>
       <h2 className="font-syne text-[22px] sm:text-[clamp(24px,2.5vw,36px)] font-medium text-black leading-[1.15] mb-3 md:mb-4 whitespace-pre-line">
         {t("title")}

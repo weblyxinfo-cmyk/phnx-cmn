@@ -1,5 +1,6 @@
 import Navbar from "@/components/sections/Navbar";
 import Hero from "@/components/sections/Hero";
+import PhotoStrip from "@/components/sections/PhotoStrip";
 import StatsBar from "@/components/sections/StatsBar";
 import About from "@/components/sections/About";
 import Services from "@/components/sections/Services";
@@ -22,6 +23,7 @@ export default async function Home({
       <Navbar />
       <main>
         <Hero />
+        <PhotoStrip />
         <StatsBar />
         <About />
         <Services />

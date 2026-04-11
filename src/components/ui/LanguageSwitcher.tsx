@@ -17,8 +17,10 @@ export default function LanguageSwitcher({
   const pathname = usePathname();
 
   function switchLocale(newLocale: string) {
-    const hash = typeof window !== "undefined" ? window.location.hash : "";
-    router.replace(pathname + hash, { locale: newLocale });
+    router.replace("/", { locale: newLocale });
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 0, behavior: "auto" });
+    }
   }
 
   return (

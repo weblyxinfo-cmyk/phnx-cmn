@@ -23,7 +23,7 @@
     "claim2": "reputácia",
     "claim3": "nie je",
     "claim4": "náhoda.",
-    "desc": "Komunikačná agentúra pôsobiaca na česko-slovenskom trhu od roku 2009. Pomáhame firmám komunikovať s médiami, verejnosťou i vlastnými ľuďmi.",
+    "desc": "Sme komunikačná agentúra pôsobiaca na česko-slovenskom trhu od roku 2009. Pomáhame firmám komunikovať s médiami, verejnosťou, partnermi aj vlastnými ľuďmi.",
     "cta": "Kontaktujte nás"
   },
   "stats": {
@@ -47,25 +47,25 @@
     ]
   },
   "about": {
-    "num": "01",
+    "num": "",
     "label": "O agentúre",
-    "headline": "Strategicky.\nZrozumiteľne.\nS dôrazom na\nvýsledok.",
+    "headline": "Postupujeme\nstrategicky.\nKomunikujeme\nzrozumiteľne.\nPracujeme s dôrazom\nna výsledok,\nbez univerzálnych šablón.",
     "points": [
       "Sme komunikačná agentúra pôsobiaca na česko-slovenskom trhu od roku 2009.",
-      "Pomáhame firmám komunikovať s médiami, verejnosťou i vlastnými ľuďmi. Strategicky, zrozumiteľne a s dôrazom na výsledok.",
-      "Prepájame analytické myslenie, kreativitu a skúsenosti — vlastné aj expertízu stálych spolupracovníkov z rozmanitých oblastí.",
+      "Pomáhame firmám komunikovať s médiami, verejnosťou, partnermi aj vlastnými ľuďmi. Strategicky, zrozumiteľne a s dôrazom na výsledok.",
+      "Prepájame analytické myslenie, kreativitu a vlastné skúsenosti s expertízou stálych spolupracovníkov z najrozmanitejších oblastí.",
       "Intenzívne a dlhodobo budujeme vzťahy s novinármi naprieč odvetviami.",
-      "Ku každému klientovi pristupujeme individuálne. Bez univerzálnych šablón a poučiek.",
+      "Ku každému klientovi pristupujeme individuálne. Bez univerzálnych šablón.",
       "Participujeme na medzinárodných projektoch v rámci Európy."
     ]
   },
   "services": {
-    "num": "02",
-    "label": "Služby",
+    "num": "",
+    "label": "Poskytované služby",
     "title": "Poskytované\nslužby",
     "items": [
       {
-        "name": "Strategické PR",
+        "name": "Strategické poradenstvo",
         "desc": "Komunikačné stratégie, kampane, reputačný manažment vrátane krízovej komunikácie."
       },
       {
@@ -85,27 +85,27 @@
         "desc": "Komunikácia smerom k zamestnancom i obchodným partnerom."
       },
       {
-        "name": "Eventy & Projekty",
+        "name": "Event management a projekty",
         "desc": "Stretnutia pre médiá, influencerov, partnerov i širokú verejnosť."
       }
     ]
   },
   "expertise": {
-    "num": "03",
+    "num": "",
     "label": "Expertíza",
     "title": "Sektory,\nv ktorých\nsa pohybujeme.",
     "desc": "Máme skúsenosti naprieč rôznymi odvetviami — od energetiky cez technológie až po kultúru a šport.",
     "items": [
-      "Energetika & obnoviteľné zdroje",
-      "Technológie & IT",
-      "Spotrebná elektronika",
-      "Medicína & zdravotníctvo",
-      "Kozmetika & lifestyle",
-      "Kultúra & šport"
+      "Energetika",
+      "Technológie",
+      "Bývanie a záhrada",
+      "Starostlivosť o zdravie",
+      "Kozmetika",
+      "Lifestyle"
     ]
   },
   "clients": {
-    "num": "04",
+    "num": "",
     "label": "Klienti",
     "title": "Spolupracujeme s českými\ni medzinárodnými značkami.",
     "desc": "Medzi našimi klientmi sú lídri trhu aj inovatívne start-upy. Niektorým sme komunikáciu vybudovali od úplného začiatku, ďalším pomáhame napĺňať dlhodobo nastavené ciele.",
@@ -118,7 +118,7 @@
     "refCta": "Napíšte nám →"
   },
   "contact": {
-    "num": "05",
+    "num": "",
     "label": "Kontakt",
     "title": "Potrebujete\nnastaviť\nkomunikáciu?",
     "desc": "Radi pripravíme návrh na mieru vášmu zadaniu.",

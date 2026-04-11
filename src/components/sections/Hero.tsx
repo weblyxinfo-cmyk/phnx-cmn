@@ -1,14 +1,23 @@
 "use client";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 
 export default function Hero() {
   const t = useTranslations("hero");
 
   const tags: string[] = t.raw("tags");
+  const [activeTag, setActiveTag] = useState(0);
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setActiveTag((prev) => (prev + 1) % tags.length);
+    }, 2600);
+    return () => clearInterval(id);
+  }, [tags.length]);
 
   return (
-    <section id="hero" className="grid grid-cols-1 md:grid-cols-2 min-h-[100svh] pt-14 md:pt-20">
+    <section id="hero" className="grid grid-cols-1 md:grid-cols-2 min-h-[100svh] pt-[56px] md:pt-[80px]">
       {/* Dark panel — HIDDEN on mobile, only visible on md+ */}
       <div className="hidden md:flex order-last bg-hero-dark relative flex-col items-center justify-center min-h-[600px] overflow-hidden">
         {/* Stripes */}
@@ -40,13 +49,18 @@ export default function Hero() {
           {t("kicker")}
         </p>
 
-        {/* Tags */}
-        <div className="flex flex-wrap gap-1.5 md:gap-2 mb-5 md:mb-8 animate-fade-in-up-1">
-          {tags.map((tag: string) => (
+        {/* Dynamic tag ticker */}
+        <div className="relative h-[26px] md:h-[30px] mb-5 md:mb-8 animate-fade-in-up-1">
+          {tags.map((tag: string, i: number) => (
             <span
               key={tag}
-              className="border border-gray-300 rounded-sm px-2.5 py-1 text-[10px] md:px-3.5 md:py-1.5 md:text-[11px] text-gray-500"
+              className={`absolute inset-0 font-inter text-[14px] md:text-[16px] font-medium text-gray-700 transition-all duration-700 ${
+                i === activeTag
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-2 pointer-events-none"
+              }`}
             >
+              <span className="inline-block w-5 h-px bg-red align-middle mr-3" />
               {tag}
             </span>
           ))}
@@ -58,12 +72,13 @@ export default function Hero() {
           <br />
           {t("claim2")}
           <br />
-          {t("claim3")}{" "}
-          <span className="text-red">{t("claim4")}</span>
+          <span className="text-red">
+            {t("claim3")} {t("claim4")}
+          </span>
         </h1>
 
         {/* Description */}
-        <p className="text-[14px] md:text-base font-light leading-[1.7] text-gray-600 max-w-[420px] mb-7 md:mb-10 animate-fade-in-up-3">
+        <p className="text-[15px] md:text-[17px] font-light leading-[1.7] text-gray-600 max-w-[460px] mb-7 md:mb-10 animate-fade-in-up-3">
           {t("desc")}
         </p>
 
