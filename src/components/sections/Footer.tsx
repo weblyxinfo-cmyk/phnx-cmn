@@ -33,10 +33,10 @@ export default function Footer() {
       </div>
 
       {/* MAIN CONTENT */}
-      <div className="relative px-5 md:px-14 pt-20 md:pt-32 pb-10 md:pb-14">
+      <div className="relative px-5 md:px-14 pt-12 md:pt-32 pb-8 md:pb-14">
         <div className="max-w-[1280px] mx-auto">
           {/* Top kicker */}
-          <div className="flex items-center gap-4 mb-10 md:mb-14">
+          <div className="flex items-center gap-4 mb-6 md:mb-14">
             <span className="inline-block w-10 md:w-14 h-px bg-red" />
             <span className="font-syne text-[10px] md:text-[11px] font-bold tracking-[0.3em] uppercase text-red">
               {t("contactLabel")}
@@ -44,19 +44,19 @@ export default function Footer() {
           </div>
 
           {/* Huge statement */}
-          <h2 className="font-syne font-semibold text-[44px] sm:text-[64px] md:text-[clamp(64px,9vw,140px)] leading-[0.95] tracking-[-0.02em] mb-12 md:mb-20">
+          <h2 className="font-syne font-semibold text-[36px] sm:text-[56px] md:text-[clamp(64px,9vw,140px)] leading-[0.95] tracking-[-0.02em] mb-8 md:mb-20">
             <span className="block text-white/90">{t("statementLead")}</span>
             <span className="block text-red">{t("statementMain")}</span>
           </h2>
 
           {/* Big email CTA */}
-          <div className="mb-14 md:mb-24">
+          <div className="mb-10 md:mb-24">
             <div className="font-syne text-[10px] md:text-[11px] font-bold tracking-[0.22em] uppercase text-white/30 mb-3 md:mb-5">
               {t("emailLabel")}
             </div>
             <a
               href="mailto:praha@phoenixcom.cz"
-              className="group inline-flex items-center gap-4 md:gap-6 font-syne text-[22px] sm:text-[32px] md:text-[clamp(32px,4.5vw,58px)] font-medium leading-none text-white hover:text-red transition-colors break-all"
+              className="group inline-flex items-center gap-3 md:gap-6 font-syne text-[18px] sm:text-[28px] md:text-[clamp(32px,4.5vw,58px)] font-medium leading-none text-white hover:text-red transition-colors break-all"
             >
               <span>praha@phoenixcom.cz</span>
               <svg
@@ -77,7 +77,7 @@ export default function Footer() {
           </div>
 
           {/* Info grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-10 pt-10 md:pt-12 border-t border-white/[0.08]">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-7 md:gap-10 pt-8 md:pt-12 border-t border-white/[0.08]">
             {/* Phone */}
             <div>
               <div className="font-syne text-[10px] font-bold tracking-[0.22em] uppercase text-red/90 mb-4">
@@ -157,7 +157,7 @@ export default function Footer() {
       {/* GIANT WATERMARK */}
       <div
         aria-hidden="true"
-        className="relative pointer-events-none select-none overflow-hidden"
+        className="relative pointer-events-none select-none overflow-hidden hidden md:block"
       >
         <div className="font-syne font-bold whitespace-nowrap text-center leading-[0.8] text-transparent"
              style={{

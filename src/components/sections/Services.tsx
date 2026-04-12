@@ -101,9 +101,9 @@ export default function Services() {
   const items: { name: string; desc: string }[] = t.raw("items");
 
   return (
-    <section id="services" className="bg-gray-900 px-5 py-12 md:px-[60px] md:py-[120px]">
+    <section id="services" className="bg-gray-900 px-5 py-10 md:px-[60px] md:py-[120px]">
       {/* Header */}
-      <div className="mb-8 md:mb-20">
+      <div className="mb-6 md:mb-20">
         <p className="font-syne text-[11px] font-bold tracking-[0.18em] uppercase text-red mb-5">
           {t("label")}
         </p>

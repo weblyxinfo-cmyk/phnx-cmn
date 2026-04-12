@@ -29,7 +29,7 @@ export default function PhotoStrip() {
         {tripled.map((photo, i) => (
           <div
             key={`${photo.alt}-${i}`}
-            className="relative h-[120px] md:h-[172px] aspect-square flex-shrink-0 border-r border-white/[0.04]"
+            className="relative h-[88px] md:h-[156px] aspect-square flex-shrink-0 border-r border-white/[0.04]"
           >
             {photo.src ? (
               <Image

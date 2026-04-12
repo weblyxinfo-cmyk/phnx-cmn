@@ -23,9 +23,9 @@ export default async function Home({
       <Navbar />
       <main>
         <Hero />
-        <PhotoStrip />
         <StatsBar />
         <About />
+        <PhotoStrip />
         <Services />
         <Expertise />
         <Clients />

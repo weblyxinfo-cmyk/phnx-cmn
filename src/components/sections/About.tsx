@@ -7,14 +7,14 @@ export default function About() {
   const points: string[] = t.raw("points");
 
   return (
-    <section id="about" className="bg-[#0d0d0d] px-5 py-12 md:px-[60px] md:py-[120px]">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-[100px] items-start">
+    <section id="about" className="bg-[#0d0d0d] px-5 py-10 md:px-[60px] md:py-[120px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-[100px] items-start">
         {/* Left */}
         <div>
           <p className="font-syne text-[11px] font-bold tracking-[0.18em] uppercase text-red mb-5">
             {t("label")}
           </p>
-          <h2 className="font-syne text-[22px] md:text-[clamp(26px,2.6vw,38px)] font-medium leading-[1.15] text-white whitespace-pre-line">
+          <h2 className="font-syne text-[18px] sm:text-[22px] md:text-[clamp(26px,2.6vw,38px)] font-medium leading-[1.15] text-white whitespace-pre-line">
             {t("headline")}
           </h2>
         </div>

@@ -17,7 +17,7 @@ export default function Hero() {
   }, [tags.length]);
 
   return (
-    <section id="hero" className="grid grid-cols-1 md:grid-cols-2 min-h-[100svh] pt-[56px] md:pt-[80px]">
+    <section id="hero" className="grid grid-cols-1 md:grid-cols-2 min-h-0 md:min-h-[100svh] pt-[56px] md:pt-[80px]">
       {/* Dark panel — HIDDEN on mobile, only visible on md+ */}
       <div className="hidden md:flex order-last bg-hero-dark relative flex-col items-center justify-center min-h-[600px] overflow-hidden">
         {/* Stripes */}
@@ -43,7 +43,7 @@ export default function Hero() {
       </div>
 
       {/* Content panel */}
-      <div className="bg-white flex flex-col justify-center px-5 py-10 md:px-[60px] md:py-[80px]">
+      <div className="bg-white flex flex-col justify-center px-5 py-8 md:px-[60px] md:py-[80px]">
         {/* Kicker — visible on mobile as red subtitle */}
         <p className="font-syne text-[10px] font-semibold tracking-[0.18em] uppercase text-red mb-5 md:hidden">
           {t("kicker")}
@@ -67,7 +67,7 @@ export default function Hero() {
         </div>
 
         {/* Claim */}
-        <h1 className="font-syne text-[32px] sm:text-[36px] md:text-[clamp(36px,4.5vw,60px)] font-semibold leading-[1.05] mb-5 md:mb-7 animate-fade-in-up-2">
+        <h1 className="font-syne text-[28px] sm:text-[36px] md:text-[clamp(36px,4.5vw,60px)] font-semibold leading-[1.05] mb-4 md:mb-7 animate-fade-in-up-2">
           {t("claim1")}
           <br />
           {t("claim2")}
@@ -78,7 +78,7 @@ export default function Hero() {
         </h1>
 
         {/* Description */}
-        <p className="text-[15px] md:text-[17px] font-light leading-[1.7] text-gray-600 max-w-[460px] mb-7 md:mb-10 animate-fade-in-up-3">
+        <p className="text-[14px] md:text-[17px] font-light leading-[1.65] text-gray-600 max-w-[460px] mb-6 md:mb-10 animate-fade-in-up-3">
           {t("desc")}
         </p>
 

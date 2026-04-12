@@ -5,21 +5,17 @@ import { useTranslations } from "next-intl";
 type Tile = {
   key: string;
   img: string | null;
-  /** Column span in 12-col grid (desktop) */
   span: number;
-  /** Aspect ratio for desktop */
-  aspect: string;
+  mdAspect: string;
 };
 
 const tiles: Tile[] = [
-  // Row 1 — two hero tiles matching client's sample proportions
-  { key: "energetika", img: "/images/expertise/energetika.png", span: 5, aspect: "aspect-[4/3]" },
-  { key: "technologie", img: "/images/expertise/technologie.png", span: 7, aspect: "aspect-[21/9]" },
-  // Row 2 — four equal tiles
-  { key: "bydleni", img: null, span: 3, aspect: "aspect-[4/3]" },
-  { key: "zdravi", img: null, span: 3, aspect: "aspect-[4/3]" },
-  { key: "kosmetika", img: null, span: 3, aspect: "aspect-[4/3]" },
-  { key: "lifestyle", img: null, span: 3, aspect: "aspect-[4/3]" },
+  { key: "energetika", img: "/images/expertise/energetika.png", span: 5, mdAspect: "md:aspect-[4/3]" },
+  { key: "technologie", img: "/images/expertise/technologie.png", span: 7, mdAspect: "md:aspect-[21/9]" },
+  { key: "bydleni", img: null, span: 3, mdAspect: "md:aspect-[4/3]" },
+  { key: "zdravi", img: null, span: 3, mdAspect: "md:aspect-[4/3]" },
+  { key: "kosmetika", img: null, span: 3, mdAspect: "md:aspect-[4/3]" },
+  { key: "lifestyle", img: null, span: 3, mdAspect: "md:aspect-[4/3]" },
 ];
 
 const spanClass: Record<number, string> = {
@@ -33,18 +29,18 @@ export default function Expertise() {
   const items: string[] = t.raw("items");
 
   return (
-    <section id="expertise" className="bg-white px-5 py-12 md:px-[60px] md:py-[120px]">
+    <section id="expertise" className="bg-white px-5 py-10 md:px-[60px] md:py-[120px]">
       {/* Section label */}
-      <p className="font-syne text-[11px] font-bold tracking-[0.18em] uppercase text-red mb-10">
+      <p className="font-syne text-[11px] font-bold tracking-[0.18em] uppercase text-red mb-6 md:mb-10">
         {t("label")}
       </p>
 
       {/* Headline block */}
-      <div className="grid grid-cols-1 md:grid-cols-[1fr_1.4fr] gap-6 md:gap-16 items-end mb-10 md:mb-16 max-w-[1280px]">
-        <h2 className="font-syne text-[30px] sm:text-[clamp(32px,3.2vw,48px)] font-medium text-black leading-[1.05] whitespace-pre-line">
+      <div className="grid grid-cols-1 md:grid-cols-[1fr_1.4fr] gap-4 md:gap-16 items-end mb-8 md:mb-16 max-w-[1280px]">
+        <h2 className="font-syne text-[24px] sm:text-[30px] md:text-[clamp(32px,3.2vw,48px)] font-medium text-black leading-[1.08] whitespace-pre-line">
           {t("title")}
         </h2>
-        <p className="text-[15px] md:text-[17px] font-light leading-[1.75] text-gray-600 max-w-[640px]">
+        <p className="text-[14px] md:text-[17px] font-light leading-[1.7] text-gray-600 max-w-[640px]">
           {t("desc")}
         </p>
       </div>
@@ -56,7 +52,7 @@ export default function Expertise() {
           return (
             <div
               key={tile.key}
-              className={`group relative ${tile.aspect} ${spanClass[tile.span] ?? ""} overflow-hidden bg-gray-900`}
+              className={`group relative aspect-[4/3] ${tile.mdAspect} ${spanClass[tile.span] ?? ""} overflow-hidden bg-gray-900`}
             >
               {tile.img ? (
                 <Image

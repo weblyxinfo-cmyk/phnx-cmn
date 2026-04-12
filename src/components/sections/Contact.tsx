@@ -51,7 +51,7 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" className="bg-black px-5 py-12 md:px-14 md:py-28">
+    <section id="contact" className="bg-black px-5 py-10 md:px-14 md:py-28">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
         {/* Left */}
         <div>
