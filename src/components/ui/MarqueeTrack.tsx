@@ -34,22 +34,22 @@ export default function MarqueeTrack({
           partner.logo ? (
             <div
               key={`${partner.name}-${i}`}
-              className="flex items-center justify-center mx-2 sm:mx-3 md:mx-4 flex-shrink-0 w-[120px] h-[72px] sm:w-[140px] sm:h-[84px] md:w-[160px] md:h-[96px] grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+              className="relative mx-2 sm:mx-3 md:mx-4 flex-shrink-0 w-[100px] h-[48px] sm:w-[120px] sm:h-[56px] md:w-[140px] md:h-[64px] grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
             >
               <Image
                 src={partner.logo}
                 alt={partner.name}
-                width={240}
-                height={96}
-                className="max-h-[70%] max-w-[80%] w-auto h-auto object-contain"
+                fill
+                sizes="(max-width: 640px) 100px, (max-width: 768px) 120px, 140px"
+                className="object-contain"
               />
             </div>
           ) : (
             <div
               key={`${partner.name}-${i}`}
-              className="flex items-center justify-center mx-2 sm:mx-3 md:mx-4 flex-shrink-0 w-[120px] h-[72px] sm:w-[140px] sm:h-[84px] md:w-[160px] md:h-[96px]"
+              className="flex items-center justify-center mx-2 sm:mx-3 md:mx-4 flex-shrink-0 w-[100px] h-[48px] sm:w-[120px] sm:h-[56px] md:w-[140px] md:h-[64px]"
             >
-              <span className="inline-flex items-center border rounded-sm px-3 py-1.5 text-[12px] sm:text-[14px] font-semibold transition-colors duration-200 border-gray-300 text-gray-600 hover:border-gray-600 hover:text-gray-900 cursor-default">
+              <span className="inline-flex items-center border rounded-sm px-3 py-1.5 text-[11px] sm:text-[13px] font-semibold transition-colors duration-200 border-gray-300 text-gray-600 hover:border-gray-600 hover:text-gray-900 cursor-default">
                 {partner.name}
               </span>
             </div>
