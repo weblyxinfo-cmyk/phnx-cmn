@@ -10,12 +10,12 @@ type Tile = {
 };
 
 const tiles: Tile[] = [
-  { key: "energetika", img: "/images/expertise/energetika.png", span: 5, mdAspect: "md:aspect-[4/3]" },
-  { key: "technologie", img: "/images/expertise/technologie.png", span: 7, mdAspect: "md:aspect-[21/9]" },
-  { key: "bydleni", img: null, span: 3, mdAspect: "md:aspect-[4/3]" },
-  { key: "zdravi", img: null, span: 3, mdAspect: "md:aspect-[4/3]" },
-  { key: "kosmetika", img: null, span: 3, mdAspect: "md:aspect-[4/3]" },
-  { key: "lifestyle", img: null, span: 3, mdAspect: "md:aspect-[4/3]" },
+  { key: "energetika", img: "/images/expertise/energetika.jpg", span: 5, mdAspect: "md:aspect-[4/3]" },
+  { key: "technologie", img: "/images/expertise/technologie.jpg", span: 7, mdAspect: "md:aspect-[21/9]" },
+  { key: "bydleni", img: "/images/expertise/bydleni.jpg", span: 3, mdAspect: "md:aspect-[4/3]" },
+  { key: "zdravi", img: "/images/expertise/zdravi.jpg", span: 3, mdAspect: "md:aspect-[4/3]" },
+  { key: "kosmetika", img: "/images/expertise/kosmetika.jpg", span: 3, mdAspect: "md:aspect-[4/3]" },
+  { key: "lifestyle", img: "/images/expertise/lifestyle.jpg", span: 3, mdAspect: "md:aspect-[4/3]" },
 ];
 
 const spanClass: Record<number, string> = {
