@@ -33,6 +33,7 @@ export default function Hero() {
           alt="Phoenix"
           width={200}
           height={200}
+          priority
           className="w-[200px] animate-float-bird drop-shadow-[0_0_40px_rgba(200,37,30,0.3)] mix-blend-screen relative z-10"
         />
 
