@@ -74,14 +74,14 @@ export default async function PhotoStrip() {
         {tripled.map((item, i) => (
           <div
             key={`${item.name}-${i}`}
-            className="relative h-[88px] md:h-[156px] aspect-square flex-shrink-0 border-r border-white/[0.04] flex items-center justify-center p-4 md:p-6"
+            className="relative h-[88px] md:h-[156px] aspect-[400/180] flex-shrink-0 border-r border-white/[0.04] flex items-center justify-center"
           >
             <Image
               src={item.logo}
               alt={item.name}
               fill
-              sizes="(max-width: 768px) 88px, 156px"
-              className="object-contain p-4 md:p-6 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-500"
+              sizes="(max-width: 768px) 196px, 347px"
+              className="object-contain p-3 md:p-5 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-500"
             />
           </div>
         ))}
