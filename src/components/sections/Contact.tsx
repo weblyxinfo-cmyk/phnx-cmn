@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import ContactFormBlock from "./ContactFormBlock";
 
 export default function Contact() {
   const t = useTranslations("contact");
@@ -84,6 +85,7 @@ export default function Contact() {
             ))}
           </div>
 
+          <ContactFormBlock />
         </div>
 
         {/* Right */}

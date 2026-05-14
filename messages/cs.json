@@ -138,7 +138,24 @@
       "ico": "28976126"
     },
     "photoCaption": "Opletalova 918/7, Praha 1",
-    "photoCaptionNote": "Budova ČTK · 110 00 Praha 1"
+    "photoCaptionNote": "Budova ČTK · 110 00 Praha 1",
+    "form": {
+      "title": "Napište nám",
+      "name": "Jméno",
+      "namePlaceholder": "Vaše jméno",
+      "email": "E-mail",
+      "emailPlaceholder": "vy@firma.cz",
+      "company": "Společnost",
+      "companyPlaceholder": "Vaše firma (nepovinné)",
+      "message": "Zpráva",
+      "messagePlaceholder": "S čím vám můžeme pomoct?",
+      "submit": "Odeslat poptávku",
+      "sending": "Odesílám…",
+      "success": "Děkujeme, ozveme se vám brzy.",
+      "errorGeneric": "Odeslání selhalo, zkuste to prosím znovu.",
+      "errorRequired": "Vyplňte prosím jméno, e-mail a zprávu.",
+      "errorEmail": "Zadejte platnou e-mailovou adresu."
+    }
   },
   "feedback": {
     "label": "Váš feedback k návrhu",

@@ -138,7 +138,24 @@
       "ico": "28976126"
     },
     "photoCaption": "Opletalova 918/7, Prague 1",
-    "photoCaptionNote": "CTK Building · 110 00 Prague 1"
+    "photoCaptionNote": "CTK Building · 110 00 Prague 1",
+    "form": {
+      "title": "Get in touch",
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "you@company.com",
+      "company": "Company",
+      "companyPlaceholder": "Your company (optional)",
+      "message": "Message",
+      "messagePlaceholder": "How can we help?",
+      "submit": "Send inquiry",
+      "sending": "Sending…",
+      "success": "Thank you, we'll get back to you soon.",
+      "errorGeneric": "Submission failed, please try again.",
+      "errorRequired": "Please fill in name, email and message.",
+      "errorEmail": "Please enter a valid email address."
+    }
   },
   "feedback": {
     "label": "Your feedback on the design",
