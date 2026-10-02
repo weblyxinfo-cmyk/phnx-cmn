@@ -20,13 +20,6 @@ export default function Hero() {
     <section id="hero" className="grid grid-cols-1 md:grid-cols-2 min-h-0 md:min-h-[100svh] pt-[56px] md:pt-[80px]">
       {/* Dark panel — HIDDEN on mobile, only visible on md+ */}
       <div className="hidden md:flex order-last bg-hero-dark relative flex-col items-center justify-center min-h-[600px] overflow-hidden">
-        {/* Stripes */}
-        <div className="absolute inset-0 flex flex-col">
-          {Array.from({ length: 8 }).map((_, i) => (
-            <div key={i} className="flex-1 border-b border-white/[0.04]" />
-          ))}
-        </div>
-
         {/* Phoenix bird */}
         <Image
           src="/images/phoenix-bird.png"
@@ -36,20 +29,10 @@ export default function Hero() {
           priority
           className="w-[200px] animate-float-bird drop-shadow-[0_0_40px_rgba(200,37,30,0.3)] mix-blend-screen relative z-10"
         />
-
-        {/* Label */}
-        <p className="font-syne text-[11px] font-semibold tracking-[0.2em] uppercase text-white/35 mt-6 relative z-10">
-          {t("kicker")}
-        </p>
       </div>
 
       {/* Content panel */}
       <div className="bg-white flex flex-col justify-center px-5 py-8 md:px-[60px] md:py-[80px]">
-        {/* Kicker — visible on mobile as red subtitle */}
-        <p className="font-syne text-[10px] font-semibold tracking-[0.18em] uppercase text-red mb-5 md:hidden">
-          {t("kicker")}
-        </p>
-
         {/* Dynamic tag ticker */}
         <div className="relative h-[26px] md:h-[30px] mb-5 md:mb-8 animate-fade-in-up-1">
           {tags.map((tag: string, i: number) => (

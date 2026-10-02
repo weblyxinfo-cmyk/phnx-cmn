@@ -11,7 +11,6 @@
     "contact": "Kontakt"
   },
   "hero": {
-    "kicker": "PR & Media Relations · od roku 2009",
     "tags": [
       "15+ rokov skúseností",
       "Silné vzťahy s médiami",
@@ -37,8 +36,8 @@
         "label": "rok vzniku agentúry"
       },
       {
-        "num": "CZ–SK",
-        "label": "primárny trh"
+        "num": "CZ/SK",
+        "label": "primárne trhy"
       },
       {
         "num": "EU",
@@ -96,12 +95,14 @@
     "title": "Sektory,\nv ktorých\nsa pohybujeme.",
     "desc": "Máme skúsenosti naprieč rôznymi odvetviami — od energetiky cez technológie až po kultúru a šport.",
     "items": [
-      "Energetika",
-      "Technológie",
+      "Energetický sektor",
+      "Technológie a priemysel",
+      "Ekonomika a financie",
       "Bývanie a záhrada",
-      "Starostlivosť o zdravie",
-      "Kozmetika",
-      "Lifestyle"
+      "Krása a zdravie",
+      "Kultúra",
+      "ICT",
+      "CSR"
     ]
   },
   "clients": {
@@ -111,9 +112,9 @@
     "desc": "Medzi našimi klientmi sú lídri trhu aj inovatívne start-upy. Niektorým sme komunikáciu vybudovali od úplného začiatku, ďalším pomáhame napĺňať dlhodobo nastavené ciele.",
     "refTitle": "Zaujímajú vás detaily, referencie či názory našich klientov?",
     "refItems": [
-      "Spätná väzba klientov v príbuznom odbore",
-      "Prípadová štúdia k službe, ktorá vás zaujíma",
-      "Konkrétne mediálne výstupy, články, videá či úspešne zrealizované akcie"
+      "Spätná väzba klientov v príbuznom odbore?",
+      "Prípadová štúdia k službe, ktorá vás zaujíma?",
+      "Konkrétne mediálne výstupy, články, videá či úspešne zrealizované akcie?"
     ],
     "refCta": "Napíšte nám →"
   },

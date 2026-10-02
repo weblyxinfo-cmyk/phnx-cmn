@@ -11,7 +11,6 @@
     "contact": "Contact"
   },
   "hero": {
-    "kicker": "PR & Media Relations · since 2009",
     "tags": [
       "17+ years of experience",
       "Deep media relationships",
@@ -37,8 +36,8 @@
         "label": "year founded"
       },
       {
-        "num": "CZ–SK",
-        "label": "primary market"
+        "num": "CZ/SK",
+        "label": "primary markets"
       },
       {
         "num": "EU",
@@ -97,11 +96,13 @@
     "desc": "Our track record spans diverse industries — from energy and technology to culture and sport.",
     "items": [
       "Energy",
-      "Technology",
+      "Technology & Industry",
+      "Economy & Finance",
       "Home & Garden",
-      "Health Care",
-      "Cosmetics",
-      "Lifestyle"
+      "Beauty & Health",
+      "Culture",
+      "ICT",
+      "CSR"
     ]
   },
   "clients": {
@@ -111,9 +112,9 @@
     "desc": "Our portfolio includes market leaders and fast-moving start-ups alike. For some we built communications from scratch; for others we drive long-term strategic goals.",
     "refTitle": "Want references, case studies, or client testimonials?",
     "refItems": [
-      "Client feedback from a relevant sector",
-      "A case study for the service you are interested in",
-      "Media placements, articles, videos, or successfully delivered events"
+      "Client feedback from a relevant sector?",
+      "A case study for the service you are interested in?",
+      "Media placements, articles, videos, or successfully delivered events?"
     ],
     "refCta": "Get in touch →"
   },

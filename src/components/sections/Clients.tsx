@@ -87,25 +87,29 @@ export default async function Clients() {
         {row2.length > 0 && <MarqueeTrack partners={row2} direction="right" speed={35} />}
       </div>
 
-      <div className="bg-white border-l-4 border-red p-5 md:p-10 grid grid-cols-1 md:grid-cols-[1fr_auto] gap-4 md:gap-10 items-start">
-        <div>
-          <h3 className="font-syne text-[17px] font-medium text-black mb-5 leading-[1.4]">
-            {t("refTitle")}
-          </h3>
-          <ul className="flex flex-col gap-3">
-            {refItems.map((item, i) => (
-              <li key={i} className="flex items-start gap-3">
-                <span className="inline-block w-5 h-px bg-red flex-shrink-0 mt-2.5" />
-                <span className="text-sm font-light text-gray-600 leading-[1.6]">
-                  {item}
-                </span>
-              </li>
-            ))}
-          </ul>
-        </div>
+      <div className="bg-white border-l-4 border-red p-5 md:p-10">
+        <h3 className="font-syne text-[17px] font-medium text-black mb-5 leading-[1.4]">
+          {t("refTitle")}
+        </h3>
+        <ul className="flex flex-col gap-3">
+          {refItems.map((item, i) => (
+            <li key={i} className="flex items-start gap-3">
+              {/* Text glyph, not a 1px box — boxes render with uneven thickness on scaled displays */}
+              <span
+                aria-hidden="true"
+                className="text-sm font-light text-red leading-[1.6] flex-shrink-0"
+              >
+                —
+              </span>
+              <span className="text-sm font-light text-gray-600 leading-[1.6]">
+                {item}
+              </span>
+            </li>
+          ))}
+        </ul>
         <a
           href="#contact"
-          className="font-syne text-[12px] font-semibold tracking-[0.1em] uppercase text-red flex items-center gap-2.5 hover:gap-4 transition-all whitespace-nowrap"
+          className="mt-6 md:mt-8 font-syne text-[12px] font-semibold tracking-[0.1em] uppercase text-red inline-flex items-center gap-2.5 hover:gap-4 transition-all whitespace-nowrap"
         >
           {t("refCta")}
         </a>

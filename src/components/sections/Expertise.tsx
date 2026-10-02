@@ -5,24 +5,19 @@ import { useTranslations } from "next-intl";
 type Tile = {
   key: string;
   img: string | null;
-  span: number;
-  mdAspect: string;
 };
 
+// Order matches `expertise.items` in messages/*.json. Tiles are 4:3 — photos 1600×1200 px.
 const tiles: Tile[] = [
-  { key: "energetika", img: "/images/expertise/energetika.jpg", span: 5, mdAspect: "md:aspect-[4/3]" },
-  { key: "technologie", img: "/images/expertise/technologie.jpg", span: 7, mdAspect: "md:aspect-[21/9]" },
-  { key: "bydleni", img: "/images/expertise/bydleni.jpg", span: 3, mdAspect: "md:aspect-[4/3]" },
-  { key: "zdravi", img: "/images/expertise/zdravi.jpg", span: 3, mdAspect: "md:aspect-[4/3]" },
-  { key: "kosmetika", img: "/images/expertise/kosmetika.jpg", span: 3, mdAspect: "md:aspect-[4/3]" },
-  { key: "lifestyle", img: "/images/expertise/lifestyle.jpg", span: 3, mdAspect: "md:aspect-[4/3]" },
+  { key: "energetika", img: "/images/expertise/energetika.jpg" },
+  { key: "technologie", img: "/images/expertise/technologie.jpg" },
+  { key: "ekonomika", img: null },
+  { key: "bydleni", img: "/images/expertise/bydleni.jpg" },
+  { key: "krasa", img: "/images/expertise/kosmetika.jpg" },
+  { key: "kultura", img: null },
+  { key: "ict", img: null },
+  { key: "csr", img: null },
 ];
-
-const spanClass: Record<number, string> = {
-  3: "md:col-span-3",
-  5: "md:col-span-5",
-  7: "md:col-span-7",
-};
 
 export default function Expertise() {
   const t = useTranslations("expertise");
@@ -45,21 +40,21 @@ export default function Expertise() {
         </p>
       </div>
 
-      {/* Asymmetric mosaic grid */}
-      <div className="grid grid-cols-2 md:grid-cols-12 gap-3 md:gap-5">
+      {/* 4 × 2 grid of 4:3 tiles */}
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-5">
         {tiles.map((tile, i) => {
           const label = items[i];
           return (
             <div
               key={tile.key}
-              className={`group relative aspect-[4/3] ${tile.mdAspect} ${spanClass[tile.span] ?? ""} overflow-hidden bg-gray-900`}
+              className="group relative aspect-[4/3] overflow-hidden bg-gray-900"
             >
               {tile.img ? (
                 <Image
                   src={tile.img}
                   alt={label}
                   fill
-                  sizes="(max-width: 768px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 50vw, 25vw"
                   className="object-cover grayscale-[10%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                 />
               ) : (

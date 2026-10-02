@@ -22,12 +22,7 @@ export default function About() {
         {/* Right - bullet list */}
         <ul className="flex flex-col gap-0 list-none">
           {points.map((point, i) => (
-            <li
-              key={i}
-              className={`flex gap-3 md:gap-5 py-3.5 md:py-5 border-b border-white/[0.06] ${
-                i === 0 ? "border-t border-t-white/[0.06]" : ""
-              }`}
-            >
+            <li key={i} className="flex gap-3 md:gap-5 py-3.5 md:py-5">
               <span className="w-1.5 h-1.5 rounded-full bg-red flex-shrink-0 mt-1.5" />
               <span className="text-[14px] md:text-[15px] font-light leading-[1.65] md:leading-[1.75] text-white/80">
                 {point}
